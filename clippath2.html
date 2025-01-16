@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Tele CRM</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/jvectormap/jquery-jvectormap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.theme.default.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+      .clip-path_container_arrow_box1 {
+        position: relative;
+        /* background-color: #3d3d3d; */
+        margin: 20px;
+      }
+      .clip_path_relative {
+        position: relative;
+        background-color: #48819e;
+        width: 100%;
+        height: 300px;
+        /* width: 805px;
+        height: 242px; */
+        clip-path: polygon(
+          98.8832% 1.022%,
+          3.4186% 1.022%,
+          3.4186% 1.022%,
+          3.27708% 1.059%,
+          3.14496% 1.172%,
+          3.01847% 1.345%,
+          2.90684% 1.582%,
+          2.80911% 1.874%,
+          2.72441% 2.212%,
+          2.65195% 2.589%,
+          2.59084% 2.998%,
+          2.54028% 3.432%,
+          2.5% 3.913%,
+          2.5% 13.157%,
+          2.5% 13.157%,
+          2.49762% 13.396%,
+          2.48573% 13.628%,
+          2.46559% 13.854%,
+          2.43735% 14.071%,
+          2.40119% 14.283%,
+          2.35722% 14.485%,
+          2.30563% 14.675%,
+          2.24662% 14.852%,
+          2.18037% 15.012%,
+          2.10706% 15.154%,
+          0.511% 21.023%,
+          0.511% 21.023%,
+          0.41745% 21.302%,
+          0.34412% 21.593%,
+          0.29155% 21.881%,
+          0.25961% 22.148%,
+          0.24857% 22.407%,
+          0.25962% 22.665%,
+          0.29157% 22.932%,
+          0.34415% 23.204%,
+          0.41747% 23.484%,
+          0.511% 23.762%,
+          2.18037% 29.631%,
+          2.18037% 29.631%,
+          2.24662% 29.772%,
+          2.30563% 29.934%,
+          2.35722% 30.114%,
+          2.40119% 30.309%,
+          2.43735% 30.519%,
+          2.46559% 30.742%,
+          2.48573% 30.967%,
+          2.49762% 31.192%,
+          2.5% 31.426%,
+          2.5% 91.561%,
+          2.5% 91.561%,
+          2.54028% 91.827%,
+          2.59084% 92.037%,
+          2.65195% 92.237%,
+          2.72441% 92.428%,
+          2.80911% 92.612%,
+          2.90684% 92.784%,
+          3.01847% 92.943%,
+          3.14496% 93.088%,
+          3.27708% 93.219%,
+          3.4186% 93.325%,
+          98.8832% 93.325%,
+          98.8832% 93.325%,
+          99.0238% 93.219%,
+          99.1559% 93.088%,
+          99.2815% 92.943%,
+          99.3909% 92.784%,
+          99.4756% 92.612%,
+          99.5404% 92.428%,
+          99.5892% 92.237%,
+          99.6196% 92.037%,
+          99.6324% 91.827%,
+          99.6397% 91.561%,
+          99.6397% 3.913%,
+          99.6397% 3.913%,
+          99.6324% 3.432%,
+          99.6196% 3.172%,
+          99.5892% 2.998%,
+          99.5404% 2.812%,
+          99.4756% 2.628%,
+          99.3909% 2.454%,
+          99.2815% 2.301%,
+          99.1559% 2.17%,
+          99.0238% 2.061%,
+          98.8832% 1.022%
+        );
+        padding: 3px;
+      }
+      .clip_path_relative2 {
+        position: absolute;
+        background-color: #ffffff;
+        background-color: #191c24;
+        width: 99.5%;
+        height: 294px;
+        /* width: 805px;
+        height: 242px; */
+        clip-path: polygon(
+          5% 0,
+          100% 0%,
+          100% 100%,
+          6% 100%,
+          6% 38%,
+          0 31%,
+          4% 22%
+        );
+        clip-path: polygon(
+          98.8832% 1.022%,
+          3.4186% 1.022%,
+          3.4186% 1.022%,
+          3.27708% 1.059%,
+          3.14496% 1.172%,
+          3.01847% 1.345%,
+          2.90684% 1.582%,
+          2.80911% 1.874%,
+          2.72441% 2.212%,
+          2.65195% 2.589%,
+          2.59084% 2.998%,
+          2.54028% 3.432%,
+          2.5% 3.913%,
+          2.5% 13.157%,
+          2.5% 13.157%,
+          2.49762% 13.396%,
+          2.48573% 13.628%,
+          2.46559% 13.854%,
+          2.43735% 14.071%,
+          2.40119% 14.283%,
+          2.35722% 14.485%,
+          2.30563% 14.675%,
+          2.24662% 14.852%,
+          2.18037% 15.012%,
+          2.10706% 15.154%,
+          0.511% 21.023%,
+          0.511% 21.023%,
+          0.41745% 21.302%,
+          0.34412% 21.593%,
+          0.29155% 21.881%,
+          0.25961% 22.148%,
+          0.24857% 22.407%,
+          0.25962% 22.665%,
+          0.29157% 22.932%,
+          0.34415% 23.204%,
+          0.41747% 23.484%,
+          0.511% 23.762%,
+          2.18037% 29.631%,
+          2.18037% 29.631%,
+          2.24662% 29.772%,
+          2.30563% 29.934%,
+          2.35722% 30.114%,
+          2.40119% 30.309%,
+          2.43735% 30.519%,
+          2.46559% 30.742%,
+          2.48573% 30.967%,
+          2.49762% 31.192%,
+          2.5% 31.426%,
+          2.5% 91.561%,
+          2.5% 91.561%,
+          2.54028% 91.827%,
+          2.59084% 92.037%,
+          2.65195% 92.237%,
+          2.72441% 92.428%,
+          2.80911% 92.612%,
+          2.90684% 92.784%,
+          3.01847% 92.943%,
+          3.14496% 93.088%,
+          3.27708% 93.219%,
+          3.4186% 93.325%,
+          98.8832% 93.325%,
+          98.8832% 93.325%,
+          99.0238% 93.219%,
+          99.1559% 93.088%,
+          99.2815% 92.943%,
+          99.3909% 92.784%,
+          99.4756% 92.612%,
+          99.5404% 92.428%,
+          99.5892% 92.237%,
+          99.6196% 92.037%,
+          99.6324% 91.827%,
+          99.6397% 91.561%,
+          99.6397% 3.913%,
+          99.6397% 3.913%,
+          99.6324% 3.432%,
+          99.6196% 3.172%,
+          99.5892% 2.998%,
+          99.5404% 2.812%,
+          99.4756% 2.628%,
+          99.3909% 2.454%,
+          99.2815% 2.301%,
+          99.1559% 2.17%,
+          99.0238% 2.061%,
+          98.8832% 1.022%
+        );
+        /* padding: 20px; */
+        /* overflow: hidden; */
+
+        /* border-radius: 20px; */
+      }
+      /* .clip_path_relative2::before { */
+      .bg-black {
+        /* position: relative;
+        top: 5px;
+        right: 35px;
+        left: 25px;
+        bottom: 45px; */
+        /* position: absolute;
+        top: 10px;
+        right: 10px;
+        left: 40px;
+        bottom: 100px; */
+        position: relative;
+        top: 10px;
+        right: 20px;
+        left: 27px;
+        bottom: 0;
+        background-color: #131b1f;
+        width: 805px;
+        height: 242px;
+        width: 100%;
+        height: 300px;
+
+        /* width: 770px;
+        height: 225px; */
+        /* margin: 30px; */
+
+        /* clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%); */
+        padding: 10px;
+      }
+      /* p {
+        color: white;
+      } */
+      .clip-path_container_arrow_box1 .right_side_arrow img,
+      .clip-path_container_arrow_box1 .left_side_arrow img {
+        width: 32px;
+        position: relative;
+      }
+
+      .clip-path_container_arrow_box1 .right_side_down img,
+      .clip-path_container_arrow_box1 .left_side_up img {
+        width: 20px;
+        position: relative;
+      }
+      .right_side_arrow .right_arrow_1 {
+        position: absolute;
+        left: 15%;
+      }
+      .right_side_arrow .right_arrow_2 {
+        position: absolute;
+        right: 30%;
+      }
+      .left_side_arrow .left_arrow_1 {
+        position: absolute;
+        left: 25%;
+      }
+      .left_side_arrow .left_arrow_2 {
+        position: absolute;
+        right: 15%;
+      }
+      .right_side_down {
+        position: absolute;
+        right: -20px;
+        top: 60px;
+      }
+      .left_side_up {
+        position: absolute;
+        left: 6px;
+        bottom: 130px;
+      }
+
+      .className {
+        width: 80%;
+        height: auto; /* Maintain aspect ratio */
+        clip-path: polygon(
+          98.8832% 1.022%,
+          3.4186% 1.022%,
+          3.4186% 1.022%,
+          3.27708% 1.059%,
+          3.14496% 1.172%,
+          3.01847% 1.345%,
+          2.90684% 1.582%,
+          2.80911% 1.874%,
+          2.72441% 2.212%,
+          2.65195% 2.589%,
+          2.59084% 2.998%,
+          2.54028% 3.432%,
+          2.5% 3.913%,
+          2.5% 13.157%,
+          2.5% 13.157%,
+          2.49762% 13.396%,
+          2.48573% 13.628%,
+          2.46559% 13.854%,
+          2.43735% 14.071%,
+          2.40119% 14.283%,
+          2.35722% 14.485%,
+          2.30563% 14.675%,
+          2.24662% 14.852%,
+          2.18037% 15.012%,
+          2.10706% 15.154%,
+          0.511% 21.023%,
+          0.511% 21.023%,
+          0.41745% 21.302%,
+          0.34412% 21.593%,
+          0.29155% 21.881%,
+          0.25961% 22.148%,
+          0.24857% 22.407%,
+          0.25962% 22.665%,
+          0.29157% 22.932%,
+          0.34415% 23.204%,
+          0.41747% 23.484%,
+          0.511% 23.762%,
+          2.18037% 29.631%,
+          2.18037% 29.631%,
+          2.24662% 29.772%,
+          2.30563% 29.934%,
+          2.35722% 30.114%,
+          2.40119% 30.309%,
+          2.43735% 30.519%,
+          2.46559% 30.742%,
+          2.48573% 30.967%,
+          2.49762% 31.192%,
+          2.5% 31.426%,
+          2.5% 91.561%,
+          2.5% 91.561%,
+          2.54028% 91.827%,
+          2.59084% 92.037%,
+          2.65195% 92.237%,
+          2.72441% 92.428%,
+          2.80911% 92.612%,
+          2.90684% 92.784%,
+          3.01847% 92.943%,
+          3.14496% 93.088%,
+          3.27708% 93.219%,
+          3.4186% 93.325%,
+          98.8832% 93.325%,
+          98.8832% 93.325%,
+          99.0238% 93.219%,
+          99.1559% 93.088%,
+          99.2815% 92.943%,
+          99.3909% 92.784%,
+          99.4756% 92.612%,
+          99.5404% 92.428%,
+          99.5892% 92.237%,
+          99.6196% 92.037%,
+          99.6324% 91.827%,
+          99.6397% 91.561%,
+          99.6397% 3.913%,
+          99.6397% 3.913%,
+          99.6324% 3.432%,
+          99.6196% 3.172%,
+          99.5892% 2.998%,
+          99.5404% 2.812%,
+          99.4756% 2.628%,
+          99.3909% 2.454%,
+          99.2815% 2.301%,
+          99.1559% 2.17%,
+          99.0238% 2.061%,
+          98.8832% 1.022%
+        );
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clip-path_container_arrow_box1 col-10">
+      <div class="right_side_arrow d-flex justify-content-between">
+        <img
+          src="./assets/images/arrow/right (1).png"
+          alt=""
+          class="right_arrow_1"
+        />
+        <img
+          src="./assets/images/arrow/right (2).png"
+          alt=""
+          class="right_arrow_2"
+        />
+      </div>
+      <div class="right_side_down">
+        <img
+          src="./assets/images/arrow/down.png"
+          alt=""
+          class="right_arrow_1"
+        />
+      </div>
+
+      <div class="clip_path_relative">
+        <div class="clip_path_relative2">
+          <!-- <div class="bg-black"> -->
+          <div
+            class="col-md-12 p-0"
+            style="padding: 10px 1px 6px 27px !important"
+          >
+            <div class="position-relative p-2 rounded">
+              <div
+                class="uploaddata inner-box-card overflow-hidden rounded br-blue m-0 w-100"
+              >
+                <div class="h-100 d-flex align-content-center">
+                  <div class="card bg-darkblue h-100 mt-2 border-0 w-100">
+                    <div class="row px-4">
+                      <div class="col-xl-4">
+                        <!-- form -->
+                        <form>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputEmail1"
+                              class="form-label text-white"
+                              >Date Added</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control bg-transparent rounded br-white rounded"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </form>
+                        <!-- form end -->
+                      </div>
+
+                      <div class="col-xl-4">
+                        <!-- form -->
+                        <form>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputEmail1"
+                              class="form-label text-white"
+                              >Sing-up Date
+                              <span class="text-danger fs-15">*</span></label
+                            >
+                            <input
+                              type="email"
+                              class="form-control bg-transparent rounded br-white rounded"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </form>
+                        <!-- form end -->
+                      </div>
+                      <div class="col-xl-4">
+                        <!-- form -->
+                        <form>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputEmail1"
+                              class="form-label text-white"
+                              >Agent Name</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control bg-transparent rounded br-white rounded"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </form>
+                        <!-- form end -->
+                      </div>
+                      <div class="col-xl-4">
+                        <!-- form -->
+                        <form>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputEmail1"
+                              class="form-label text-white"
+                              >Last Modified</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control bg-transparent rounded br-white rounded"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </form>
+                        <!-- form end -->
+                      </div>
+                      <div class="col-xl-4">
+                        <!-- form -->
+                        <form>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputEmail1"
+                              class="form-label text-white"
+                              >Agent Name</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control bg-transparent rounded br-white rounded"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </form>
+                        <!-- form end -->
+                      </div>
+                      <div class="col-xl-4">
+                        <!-- form -->
+                        <form>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputEmail1"
+                              class="form-label text-white"
+                              >Data Source</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control bg-transparent rounded br-white rounded"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </form>
+                        <!-- form end -->
+                      </div>
+                      <div class="col-xl-8">
+                        <!-- form -->
+                        <form>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputEmail1"
+                              class="form-label text-white"
+                              >Remark</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control bg-transparent rounded br-white rounded"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </form>
+                        <!-- form end -->
+                      </div>
+                      <div class="col-xl-4">
+                        <!-- form -->
+                        <form>
+                          <label
+                            for="exampleInputEmail1"
+                            class="form-label text-white visi"
+                          ></label>
+                          <div
+                            class="mb-3 col-12 d-flex justify-content-center"
+                          >
+                            <div class="col-5">
+                              <button
+                                class="btn btn-primary bg-blue w-100 text-black px-3 fs-16 fw-600 rounded border-0 py-2"
+                              >
+                                Update Details
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                        <!-- form end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="left_side_up">
+        <img src="./assets/images/arrow/up.png" alt="" class="left_arrow_1" />
+      </div>
+
+      <div class="left_side_arrow d-flex justify-content-between">
+        <img
+          src="./assets/images/arrow/left (2).png"
+          alt=""
+          class="left_arrow_1"
+        />
+        <img
+          src="./assets/images/arrow/left (1).png"
+          alt=""
+          class="left_arrow_2"
+        />
+      </div>
+    </div>
+
+    <div class="className">jnjjnjjnjj</div>
+    <!-- <div class="col-9 my-4 position-relative h-100">
+      <img
+        src="./assets/images/border-arrow.svg"
+        alt=""
+        class="w-100 position-absolute"
+        width=""
+      />
+      <div class="bg-white w-100 position-relative mx-5">
+        <p>nnmnm</p>
+      </div>
+    </div> -->
+  </body>
+</html>

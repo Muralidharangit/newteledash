@@ -1,0 +1,3307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Tele CRM</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/jvectormap/jquery-jvectormap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.theme.default.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <style>
+      swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      swiper-slide {
+        display: block;
+        width: 175px !important;
+        margin-right: 26px !important;
+      }
+      .cir1 {
+        width: 30px;
+        height: 30px;
+        /* margin: 30px; */
+        border-radius: 50%;
+        border: 2px dashed black;
+        padding: 3px;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        transform: rotate(40deg);
+        box-sizing: content-box;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        transition: 0.3s;
+        transform: scale(0.8) rotate(40deg);
+        /* transform: rotate(0deg); */
+      }
+
+      /* .btns:hover .cir1 {
+        width: 40px;
+        height: 40px;
+      } */
+
+      .cir1::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px solid black;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      /* new Style added Starts */
+      .border-radius-10 {
+        border-radius: 10px;
+      }
+      .border_darkblue_st {
+        border: 2px solid #48819e;
+        border-bottom: 0;
+        padding: 14px 0 0 0;
+      }
+
+      .clip-path_box-1_sr_out {
+        padding: 3px;
+        position: relative;
+
+        overflow: hidden;
+        background-color: #48819e;
+        /* clip-path: polygon(0 20%, 10% 0, 100% 0, 100% 80%, 90% 100%, 0% 100%); */
+        /* clip-path: polygon(0 14%, 4% 0, 96% 0, 100% 15%, 100% 100%, 0% 100%); */
+        clip-path: polygon(0 13%, 2% 0, 98% 0, 100% 15%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 6%, 2% 0, 98% 0, 100% 6%, 100% 100%, 0% 100%);
+      }
+      .clip-path_box-1_sr_out .clip-path_box-1_sr_in {
+        /* clip-path: polygon(0 14%, 4% 0, 96% 0, 100% 15%, 100% 100%, 0% 100%); */
+        clip-path: polygon(0 13%, 2% 0, 98% 0, 100% 15%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 6%, 2% 0, 98% 0, 100% 6%, 100% 100%, 0% 100%);
+        background-color: #011825 !important;
+        /* padding: 18px; */
+      }
+
+      /* bottom clip_path Start */
+      .clip-path_box-2_bottom_sr_out {
+        padding: 3px;
+        position: relative;
+        overflow: hidden;
+        background-color: #48819e;
+        /* clip-path: polygon(
+          0 20%,
+          10% 0,
+          90% 0,
+          100% 20%,
+          100% 80%,
+          90% 100%,
+          10% 100%,
+          0% 80%
+        ); */
+        clip-path: polygon(
+          0 100%,
+          0 0,
+          100% 0,
+          100% 0%,
+          100% 50%,
+          90% 100%,
+          10% 100%,
+          0% 50%
+        );
+      }
+      .clip-path_box-2_bottom_sr_out .clip-path_box-2_bottom_sr_in {
+        clip-path: polygon(
+          0 100%,
+          0 0,
+          100% 0,
+          100% 0%,
+          100% 50%,
+          90% 100%,
+          10% 100%,
+          0% 50%
+        );
+        background-color: #011825;
+      }
+      /* bottom clip_path End */
+      .colorblack_hr-border {
+        height: auto;
+        width: 3px;
+        background: #48819e;
+      }
+      .deep_teal_fullborder {
+        border: 3px solid #48819e;
+      }
+
+      .cir1_out_white {
+        width: 44.92px;
+        height: 44.92px;
+        border-radius: 50%;
+        border: 1px dashed rgb(255, 255, 255);
+        /* padding: 3px; */
+        border-top: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        transform: rotate(40deg);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+      }
+      .cir1_out_white::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 35.16px;
+        height: 35.16px;
+        border-radius: 50%;
+
+        border: 3px solid #48819e;
+        /* box-sizing: border-box; */
+        /* padding: 10px; */
+      }
+      .cir1_out_white .center_cir1 {
+        width: 12.05px;
+        height: 12.05px;
+        border-radius: 50%;
+
+        background-color: #48819e;
+        transform: rotate(0deg);
+      }
+      .cir1_out_white.active::before {
+        border: 3px solid #0cfbf4;
+      }
+      .cir1_out_white.active .center_cir1 {
+        background-color: #0cf4f4;
+      }
+
+      .checkbox_darkblue {
+        accent-color: #00394d;
+      }
+      /* .checkbox_darkblue:not(:checked) {
+        background-color: red;
+        accent-color: #4d0000;
+        border: 2px solid red;
+      }
+      .checkbox_darkblue:checked {
+        background-color: #00394d;
+        border: 2px solid #00394d;
+      } */
+      /* bg-lightblue */
+
+      /* new Style Ends */
+      button.btn.btn-primary.blue {
+        position: relative;
+      }
+      thead.arrow th button::after {
+        content: "";
+        background-image: url(./assets/images/table/tablearrow.png);
+        background-size: contain; /* Ensures the image fits within the bounds */
+        background-repeat: no-repeat;
+        display: inline-block; /* Required to render the background image */
+        width: 8%; /* Adjust width as needed */
+        height: 1em; /* Adjust height to fit the button, can also use a fixed value */
+        vertical-align: middle; /* Aligns the image with the text */
+        position: absolute;
+        right: 5px;
+      }
+
+      .btns.active {
+        --curve-size: 0.8em;
+        --curve-sizetwo: 1em;
+        transform: translateY(-5px) !important;
+        clip-path: polygon(
+          0% var(--curve-sizetwo),
+          var(--curve-size) 0,
+          100% 0,
+          100% calc(100% - var(--curve-size)),
+          calc(100% - var(--curve-size)) 100%,
+          0 100%
+        );
+        background: #0cf4f4 !important;
+        height: 60px;
+        font-size: 16px;
+      }
+      .btns.active .cir1 {
+        transform: scale(1) rotate(40deg);
+      }
+      .btns::after {
+        clip-path: polygon(
+          /* Top-left */ var(--border-width)
+            calc(var(--curve-size) + var(--border-width) * 0.5),
+          calc(var(--curve-size) + var(--border-width) * 0.5)
+            var(--border-width),
+          /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+          calc(100% - var(--border-width))
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+          /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+            calc(100% - var(--border-width)),
+          /* bottom-right 2 */ var(--border-width)
+            calc(100% - var(--border-width))
+        );
+      }
+
+      .table-wrapper {
+        max-height: 400px;
+        overflow-y: auto;
+        position: relative;
+      }
+      .table-fixed-header thead th {
+        position: sticky;
+        top: 0;
+        background-color: #fff; /* Adjust as needed */
+        z-index: 1;
+      }
+
+      /* new style starts */
+      .fs-24 {
+        font-size: 24px;
+      }
+      .fs-700 {
+        font-weight: 700;
+      }
+      /* new style starts */
+    </style>
+
+    <style>
+      .dropdown-item {
+        border-top: 1px solid rgba(255, 255, 255, 0.427);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.558);
+        margin-bottom: 1px;
+        color: white;
+        list-style: none;
+        background-color: #011825;
+      }
+
+      .dropdown-item:hover {
+        background-color: #011825 !important;
+        color: white !important;
+      }
+
+      .dropdown-item:focus {
+        background-color: #011825 !important;
+        outline: none !important;
+        color: white !important;
+      }
+
+      .dropdown-item:active {
+        background-color: #011825 !important;
+        outline: none !important;
+        color: white !important;
+      }
+
+      .dropdown-item.one {
+        border-radius: 5px 5px 0px 0px;
+      }
+
+      .dropdown-item.five {
+        border-bottom: 0px solid white !important;
+      }
+
+      .dropdown-submenu {
+        position: relative;
+      }
+
+      .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+      }
+
+      .dropdown-menu .dropdown_menu_one {
+        background-color: #00394d !important;
+        width: 255px !important;
+        border: 1px solid #0cfbf4 !important;
+      }
+
+      .dropdown-menu .dropdown_menu_one li a {
+        background-color: #00394d !important;
+        border: none !important;
+        border-radius: 10px !important;
+      }
+
+      .Whats-App_box_icons {
+        /* border: 1px solid white !important; */
+
+        height: 21px !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        margin: 0 10px;
+        background-color: #011825 !important;
+      }
+
+      .Whats-App_box_icons .Whats-App_box_icon_item {
+        font-size: 13px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none !important;
+        color: #0cfbf4 !important;
+        background-color: #011825 !important;
+      }
+
+      .text_field.form-control {
+        padding: 0 20px;
+        height: 100px !important;
+      }
+
+      .form-control:active {
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+      }
+
+      .dropdown .dropdown-menu .dropdown-item {
+        font-size: 14px;
+        padding: 5px;
+      }
+
+      /* .dropdown .dropdown-menu .dropdown-item {
+        font-size: 12px;
+        padding: 5px;
+        text-align: center;
+      } */
+
+      .dropdown .dropdown-menu .dropdown-item {
+        font-size: 12px;
+        padding: 5px 20px;
+        text-align: center;
+      }
+
+      .dropdown-menu.p-0.m-0.show {
+        min-width: 7.5rem !important;
+        /* left: -8px !important; */
+        top: 4px !important;
+      }
+
+      .dropdown-menu .dropdown_menu_one li a.Whats-App_box_icon_item.bg-none {
+        background: none !important;
+      }
+      .pop-bg {
+        border: 1px solid #0cfbf4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <img
+        src="./assets/images/logo.png"
+        alt="Loading"
+        class="rotating-image"
+        class="w-100"
+      />
+    </div>
+
+    <div class="container-scroller">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div
+          class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
+        >
+          <div class="px-2">
+            <div
+              class="d-flex justify-content-evenly align-items-center"
+              href="index.html"
+            >
+              <img src="assets/images/seka.png" alt="logo" class="w-17 mr-15" />
+              <span class="text-white fs-20 fw-lighter">Seemasikander</span>
+            </div>
+          </div>
+        </div>
+        <ul class="nav">
+          <!-- <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li> -->
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/1.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <div class="menu-title clr-50"><span>Dashboard</span></div>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/2.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-50">Users</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./Calltracker.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/3act.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-50 active">Call Tracker</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./uploadata.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/4.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title">Upload Data</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./Transferdata.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/5.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title">Transfer Data</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./Databank.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/6.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title">Data Bank</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./Linetracker.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/7.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title">Link Tracker</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="links.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/8.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-70">Links</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/9.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-70">Reports</span>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./setting.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/10.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-70">Settings</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./login.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/11.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-70">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div
+            class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center"
+          >
+            <a class="navbar-brand brand-logo-mini" href="index.html"
+              ><img src="assets/images/logo-mini.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button
+              class="navbar-toggler navbar-toggler align-self-center"
+              type="button"
+              data-toggle="minimize"
+            >
+              <span class="mdi mdi-menu"></span>
+            </button>
+
+            <button
+              class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+              type="button"
+              data-toggle="offcanvas"
+            >
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper bg-mainblac pt-0">
+            <!-- box 1 Starts -->
+            <div class="top-cont">
+              <div class="row align-items-center m-0">
+                <div
+                  class="col-6 w-100 position-relative px-0"
+                  style="top: 5px"
+                >
+                  <!-- test Starts -->
+                  <!-- <div class="box">
+                    <div class="triangle"></div>
+                    <div class="triangle2"></div>
+                  </div>
+                  <div class="custom-border"></div>
+
+                  <div class="clip-path_box-1_sr_out">
+                    <div class="p-1 clip-path_box-1_sr_in">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Est atque quasi eos illum molestias maiores, tempora
+                        molestiae ullam natus, nesciunt voluptatibus optio ab
+                        aliquam. Dolor veritatis cumque dolores nemo similique.
+                      </p>
+                    </div>
+                  </div> -->
+
+                  <!-- test Ends-->
+
+                  <div class="clip-path_box-1_sr_out">
+                    <div class="clip-path_box-1_sr_in">
+                      <div class="row flex-nowrap px-4">
+                        <div
+                          class="col-5 px-1 py-2"
+                          style="border-right: 3px solid #48819e"
+                        >
+                          <div
+                            class="bg-lightblue px-1 py-0 d-flex justify-content-between align-content-center"
+                          >
+                            <h6
+                              class="mb-0 fw-normal fs-11 m-0 d-flex align-items-center"
+                            >
+                              Our Growth
+                            </h6>
+                            <img
+                              src="./assets/images/table/tab1.png"
+                              alt=""
+                              srcset=""
+                              class="w-10"
+                              style="width: 10% !important"
+                            />
+                          </div>
+
+                          <ul
+                            class="list-unstyled fs-10 border-bottom-1 listbg-white w-90 mt-2"
+                            style="height: 120px; overflow-y: scroll"
+                          >
+                            <li class="d-flex align-items-center py-1">
+                              Good morning Seema
+                            </li>
+                            <li class="d-flex align-items-center">
+                              Good morning Seema
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                        </div>
+                        <div class="colorblack_hr-border"></div>
+                        <div
+                          class="col-lg-7 d-flex justify-content-around px-1"
+                        >
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-center"
+                          >
+                            <div class="cir1_out_white active">
+                              <div class="center_cir1"></div>
+                            </div>
+
+                            <span class="mt-3 fs-12">Online</span>
+
+                            <div
+                              style="
+                                width: 30px;
+                                height: 10px;
+                                border-radius: 22px;
+                              "
+                              class="bg-neon mt-3"
+                            ></div>
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-center"
+                          >
+                            <div class="cir1_out_white">
+                              <div class="center_cir1"></div>
+                            </div>
+
+                            <span class="mt-3 fs-12">Avaiable</span>
+
+                            <div
+                              style="
+                                width: 30px;
+                                height: 10px;
+                                border-radius: 22px;
+                              "
+                              class="bg-lightblue mt-3"
+                            ></div>
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-center"
+                          >
+                            <div class="cir1_out_white">
+                              <div class="center_cir1"></div>
+                            </div>
+
+                            <span class="mt-3 fs-12">Breaktime</span>
+
+                            <div
+                              style="
+                                width: 30px;
+                                height: 10px;
+                                border-radius: 22px;
+                              "
+                              class="bg-lightblue mt-3"
+                            ></div>
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-center"
+                          >
+                            <div class="cir1_out_white">
+                              <div class="center_cir1"></div>
+                            </div>
+
+                            <span class="mt-3 fs-12"
+                              ><span class="text-orange">5</span>mins</span
+                            >
+
+                            <div
+                              style="
+                                width: 30px;
+                                height: 10px;
+                                border-radius: 22px;
+                              "
+                              class="bg-lightblue mt-3"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 mt-2 p-0">
+                  <div class="d-flex">
+                    <!-- call Time  Start-->
+                    <div class="ml-1">
+                      <div class="deep_teal_fullborder text-center py-2 px-0">
+                        <p class="fs-12 mb-2">Call Time</p>
+                        <h3 class="text-neonblue fs-24 fs-700">03:00</h3>
+                      </div>
+                      <div
+                        class="clip-path_box-2_bottom_sr_out mt-1 text-center"
+                      >
+                        <div class="clip-path_box-2_bottom_sr_in bg-red p-1">
+                          <p class="mb-0 p-2">Call End</p>
+                          <h4
+                            class="text-neonblue mb-0 fs-5 visbility"
+                            style="visibility: hidden"
+                          >
+                            98
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- call Time  Ends-->
+                    <!-- Bar Starts -->
+                    <div class="mx-2">
+                      <div
+                        style="
+                          width: 19px;
+                          background: linear-gradient(
+                            to bottom,
+                            #011825 12%,
+                            #55a8fa 54%,
+                            #02fbfd 100%
+                          );
+                          height: 100%;
+                        "
+                      ></div>
+                    </div>
+                    <!-- Bar Starts -->
+
+                    <!-- Login Hours Starts -->
+                    <div>
+                      <div class="deep_teal_fullborder text-center py-2 px-0">
+                        <p class="fs-12 mb-2">Call Time</p>
+                        <h3 class="text-neonblue fs-24 fs-700">03:00</h3>
+                      </div>
+                      <div
+                        class="clip-path_box-2_bottom_sr_out mt-1 text-center"
+                      >
+                        <div class="clip-path_box-2_bottom_sr_in p-1 px-0">
+                          <p class="mb-0">No Of Calls</p>
+                          <h4 class="text-neonblue mb-0 fs-20">98</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Login Hours Ends -->
+
+                    <!-- Today's Amount MTD Amount Starts -->
+                    <div class="mx-1 flex-fill">
+                      <div
+                        class="deep_teal_fullborder text-center px-2 d-flex justify-content-around bg-darkblue p-1"
+                      >
+                        <div>
+                          <p class="fs-12 mb-2">Today Amount</p>
+                          <h3 class="text-neonblue fs-24 fw-700">24,000</h3>
+                        </div>
+                        <div>
+                          <p class="fs-12 mb-2">MTD Amount</p>
+                          <h3 class="text-neonblue fs-24 fw-700">96,000</h3>
+                        </div>
+                      </div>
+                      <div
+                        class="clip-path_box-2_bottom_sr_out mt-1 text-center"
+                      >
+                        <div
+                          class="clip-path_box-2_bottom_sr_in bg-colorblack p-1"
+                        >
+                          <div
+                            class="text-center p-0 d-flex justify-content-around p-2"
+                          >
+                            <div>
+                              <p class="fs-12 mb-0">Today's Score</p>
+                              <h3 class="text-orange fs-24 mb-0">3</h3>
+                            </div>
+                            <div>
+                              <p class="fs-12 mb-0">Monthly Score</p>
+                              <h3 class="text-orange fs-24 mb-0">33</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Today's Amount MTD Amount Ends -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- box 2 Starts -->
+            <!-- box 2 Starts -->
+            <!-- box 2 Starts -->
+            <div class="col-lg-12 p-0">
+              <div class="grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body table-bgblue border-radius-10">
+                    <div class="mb-3 br-bottomblue">
+                      <!-- <h4 class="card-title fw-300 fw-18">Data Transfer</h4> -->
+
+                      <swiper-container
+                        class="mySwiper mb-3 h-60"
+                        init="false"
+                        pagination="false"
+                        pagination-clickable="false"
+                      >
+                        <swiper-slide>
+                          <button
+                            class="btns d-flex gap-10 align-items-center justify-content-start br-blue"
+                          >
+                            <span
+                              class="d-flex justify-content-center align-content-center fs-14"
+                            ></span>
+                            <div class="cir1">
+                              <div style="transform: rotate(-40deg)">42</div>
+                            </div>
+                            Call Sheet
+                          </button>
+                        </swiper-slide>
+                        <swiper-slide>
+                          <button
+                            class="btns active d-flex gap-10 align-items-center justify-content-start br-blue"
+                          >
+                            <span
+                              class="d-flex justify-content-center align-content-center fs-14"
+                            ></span>
+                            <div class="cir1">
+                              <div style="transform: rotate(-40deg)">42</div>
+                            </div>
+                            Lead Master
+                          </button>
+                        </swiper-slide>
+                        <swiper-slide>
+                          <button
+                            class="btns d-flex gap-10 align-items-center justify-content-start br-blue"
+                          >
+                            <span
+                              class="d-flex justify-content-center align-content-center fs-14"
+                            ></span>
+                            <div class="cir1">
+                              <div style="transform: rotate(-40deg)">42</div>
+                            </div>
+                            <span
+                              class="text-orange"
+                              style="
+                                font-size: 25px !important;
+                                position: relative;
+                                right: -10px;
+                              "
+                            >
+                              4
+                            </span>
+                            <span class="text-lowercase"> mins</span>
+                          </button>
+                        </swiper-slide>
+                        <swiper-slide>
+                          <button
+                            class="btns d-flex gap-10 align-items-center justify-content-start br-blue"
+                          >
+                            <span
+                              class="d-flex justify-content-center align-content-center fs-14"
+                            ></span>
+                            <div class="cir1">
+                              <div style="transform: rotate(-40deg)">42</div>
+                            </div>
+                            Promise pay
+                          </button>
+                        </swiper-slide>
+                        <swiper-slide>
+                          <button
+                            class="btns d-flex gap-10 align-items-center justify-content-start br-blue"
+                          >
+                            <span
+                              class="d-flex justify-content-center align-content-center fs-14"
+                            ></span>
+                            <div class="cir1">
+                              <div style="transform: rotate(-40deg)">42</div>
+                            </div>
+                            Follow up
+                          </button>
+                        </swiper-slide>
+                        <swiper-slide>
+                          <button
+                            class="btns d-flex gap-10 align-items-center justify-content-start br-blue"
+                          >
+                            <span
+                              class="d-flex justify-content-center align-content-center fs-14"
+                            ></span>
+                            <div class="cir1">
+                              <div style="transform: rotate(-40deg)">42</div>
+                            </div>
+                            Retension
+                          </button>
+                        </swiper-slide>
+                        <swiper-slide>
+                          <button
+                            class="btns d-flex gap-10 align-items-center justify-content-center br-blue"
+                          >
+                            My Performance
+                          </button>
+                        </swiper-slide>
+                        <swiper-slide>
+                          <button
+                            class="btns d-flex gap-10 align-items-center justify-content-center br-blue"
+                          >
+                            Target & Incentives
+                          </button>
+                        </swiper-slide>
+                      </swiper-container>
+
+                      <!-- 
+                            <div class="row-button d-flex gap-10 mb-4">
+                                <button class="btns d-flex gap-10 align-items-center">
+
+                                    <span class="d-flex justify-content-center align-content-center rounded-pill br-white fs-14">42</span>
+                                    Balaji
+                                </button>
+
+                                <button class="btns d-flex gap-10 align-items-center">
+
+                                  <span class="d-flex justify-content-center align-content-center rounded-pill br-white fs-14">42</span>
+                                  Balaji
+                              </button>
+
+                              <button class="btns d-flex gap-10 align-items-center">
+
+                                <span class="d-flex justify-content-center align-content-center rounded-pill br-white fs-14">42</span>
+                                Balaji
+                            </button>
+
+                            <button class="btns d-flex gap-10 align-items-center">
+
+                              <span class="d-flex justify-content-center align-content-center rounded-pill br-white fs-14">42</span>
+                              Balaji
+                          </button>
+
+                          <button class="btns d-flex gap-10 align-items-center">
+
+                            <span class="d-flex justify-content-center align-content-center rounded-pill br-white fs-14">42</span>
+                            Balaji
+                        </button>
+                            </div> -->
+                    </div>
+
+                    <div class="row mt-0 mb-3">
+                      <div
+                        class="col-md-8 fs-13 d-flex justify-content-start align-items-center gap-10"
+                      >
+                        <span>Show</span>
+                        <button
+                          class="btn btn-primary bg-neon p-1 fs-12 text-black"
+                        >
+                          10 <i class="fa-solid fa-square-caret-down"></i>
+                        </button>
+                        <span>Entries</span>
+
+                        <!-- new icons -->
+
+                        <!-- fILTER ICON -->
+                        <div class="d-flex gap-10 ms-lg-2 align-items-center">
+                          <button
+                            class="btn bg-darkblack datatable-br h-32"
+                            href="#"
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#applyfilter"
+                          >
+                            <i class="fa-solid fa-filter"></i>
+                          </button>
+
+                          <div class="dropdown">
+                            <button
+                              class="btn bg-darkblue datatable-br dropdown-toggle arrownone h-32 px-4"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="./assets/images/table/tab1.png"
+                                alt=""
+                                width="15px"
+                              />
+                              Action
+                            </button>
+                            <ul class="dropdown-menu p-0 w-100px">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  type="button"
+                                  class="btn btn-primary"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#transferpop"
+                                  >Transfer</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="#"
+                                  type="button"
+                                  class="btn btn-primary"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#massupdate"
+                                  >Mass Update</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="#"
+                                  type="button"
+                                  class="btn btn-primary"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#whatup"
+                                  >Whats-App</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="#"
+                                  type="button"
+                                  class="btn btn-primary"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#sms"
+                                  >Sms</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="d-flex">
+                            <ul
+                              class="list-group list-group-horizontal p-1 bg-darkblue"
+                            >
+                              <li class="list-group-item p-1">Copy</li>
+                              <li class="list-group-item p-1">CSV</li>
+                              <li class="list-group-item p-1">Excel</li>
+                              <li class="list-group-item p-1">PDF</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col-md-4 fs-13 d-flex justify-content-end align-items-center gap-10"
+                      >
+                        <div class="search">
+                          <span class="">Search</span>
+                          <input
+                            type="text"
+                            class="bg-darkblue rounded br-white form-focus-control mx-0"
+                          />
+                        </div>
+                        <a href="./calltracker_addled.html">
+                          <!-- <button
+                            class="btn btn-primary bg-darkblue py-1 rounded-8"
+                          >
+                            Add <i class="mdi mdi-plus"></i>
+                          </button> -->
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="">
+                        <table class="table table-striped bg-white">
+                          <thead>
+                            <tr class="bg-white p-2">
+                              <!-- <th>
+                                <button class="btn btn-primary blue px-1 py-1">
+                                  <div>
+                                    <img
+                                      src="./assets/images/table/tab1.png"
+                                      alt=""
+                                      srcset=""
+                                      class="table-img"
+                                    />
+                                  </div>
+                                </button>
+                              </th> -->
+                              <th class="">
+                                <div class="d-flex justify-content-center">
+                                  <div class="dropdown">
+                                    <div
+                                      class="m-0 p-0 btn btn-primary blue bg-darkblue px-1 py-1"
+                                      type="button"
+                                      id="dropdownMenuButton1"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <!-- <img
+                                        src="./assets/images/table/tab1.png"
+                                        alt=""
+                                        class="table-img"
+                                        width="25"
+                                      /> -->
+                                      <input
+                                        class="checkbox_darkblue"
+                                        type="checkbox"
+                                        checked=""
+                                      />
+                                    </div>
+                                    <div
+                                      class="dropdown-menu p-0 m-0"
+                                      aria-labelledby="dropdownMenuButton1"
+                                    >
+                                      <ul
+                                        class="dropdown-lists list-unstyled m-0"
+                                        style="
+                                          left: -9px !important;
+                                          top: 3px !important;
+                                        "
+                                      >
+                                        <li>
+                                          <a class="dropdown-item one" href="#"
+                                            >All</a
+                                          >
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                          <a class="dropdown-item" href="#"
+                                            >Transfer to Agent</a
+                                          >
+                                          <ul
+                                            class="dropdown-menu dropdown_menu_one mx-1"
+                                          >
+                                            <li>
+                                              <a class="dropdown-item" href="#">
+                                                <div class="first_dropdown_box">
+                                                  <form class="w-100 p-2 px-3">
+                                                    <div
+                                                      class="mb-3 channel-partner-edit-branch text-left"
+                                                    >
+                                                      <label
+                                                        for="inputName"
+                                                        class="form-label mb-1 fs-15 fs-600 text-left"
+                                                        >Agent Name</label
+                                                      >
+                                                      <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="inputName"
+                                                        placeholder="Name"
+                                                        aria-describedby="nameHelp"
+                                                      />
+                                                    </div>
+                                                    <div
+                                                      class="mb-3 channel-partner-edit-branch text-left"
+                                                    >
+                                                      <label
+                                                        for="inputUploadedDate"
+                                                        class="form-label mb-1 fs-15 fs-600 text-left"
+                                                      >
+                                                        Our Growth
+                                                      </label>
+                                                      <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="inputUploadedDate"
+                                                        placeholder="Our Growth"
+                                                        aria-describedby="uploadedDateHelp"
+                                                      />
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                          <a class="dropdown-item" href="#"
+                                            >Transfer To Bank</a
+                                          >
+                                          <ul
+                                            class="dropdown-menu dropdown_menu_one mx-1"
+                                          >
+                                            <li>
+                                              <a class="dropdown-item" href="#">
+                                                <div class="first_dropdown_box">
+                                                  <form class="w-100 p-2 px-3">
+                                                    <div
+                                                      class="mb-3 channel-partner-edit-branch text-left"
+                                                    >
+                                                      <label
+                                                        for="inputName"
+                                                        class="form-label mb-1 fs-15 fs-600"
+                                                      >
+                                                        Bank Name</label
+                                                      >
+                                                      <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="inputName"
+                                                        placeholder="Name"
+                                                        aria-describedby="nameHelp"
+                                                      />
+                                                    </div>
+                                                    <div
+                                                      class="mb-3 channel-partner-edit-branch position-relative text-left"
+                                                    >
+                                                      <label
+                                                        for="inputUploadedDate"
+                                                        class="form-label mb-1 fs-15 fs-600"
+                                                      >
+                                                        Remark
+                                                      </label>
+                                                      <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="inputUploadedDate"
+                                                        placeholder="Our Growth"
+                                                        aria-describedby="uploadedDateHelp"
+                                                      />
+                                                    </div>
+                                                  </form>
+                                                </div>
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                          <a class="dropdown-item" href="#"
+                                            >Whats-App</a
+                                          >
+                                          <ul
+                                            class="dropdown-menu dropdown_menu_one mx-1"
+                                          >
+                                            <li>
+                                              <div class="first_dropdown_box">
+                                                <form class="w-100 my-3 px-2">
+                                                  <div
+                                                    class="mx-2 mb-2 channel-partner-edit-branch"
+                                                  >
+                                                    <label
+                                                      for="inputWhatsApp"
+                                                      class="form-label mb-1 fs-15 fs-600 text-white"
+                                                      >Type Whats-App</label
+                                                    >
+                                                    <textarea
+                                                      id="inputWhatsApp"
+                                                      class="text_field form-control px-2 py-1"
+                                                      placeholder="Message"
+                                                      rows="10"
+                                                    ></textarea>
+                                                  </div>
+                                                  <div
+                                                    class="Whats-App_box_icons"
+                                                  >
+                                                    <div class="d-flex">
+                                                      <a
+                                                        href="#"
+                                                        class="Whats-App_box_icon_item bg-none"
+                                                        ><i
+                                                          class="fa-solid fa-plus"
+                                                        ></i
+                                                      ></a>
+                                                      <a
+                                                        href="#"
+                                                        class="Whats-App_box_icon_item bg-none"
+                                                        ><i
+                                                          class="fa-solid fa-microphone"
+                                                        ></i
+                                                      ></a>
+                                                    </div>
+                                                    <div>
+                                                      <a
+                                                        href="#"
+                                                        class="Whats-App_box_icon_item bg-none"
+                                                        ><i
+                                                          class="fa-solid fa-circle-chevron-right"
+                                                        ></i
+                                                      ></a>
+                                                    </div>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                          <a class="dropdown-item five" href="#"
+                                            >Sms</a
+                                          >
+                                          <ul
+                                            class="dropdown-menu dropdown_menu_one mx-1"
+                                          >
+                                            <li>
+                                              <div class="first_dropdown_box">
+                                                <form class="w-100 my-3 px-2">
+                                                  <div
+                                                    class="mx-2 mb-2 channel-partner-edit-branch"
+                                                  >
+                                                    <label
+                                                      for="inputWhatsApp"
+                                                      class="form-label mb-1 fs-15 fs-600 text-white"
+                                                      >Type SMS</label
+                                                    >
+                                                    <textarea
+                                                      id="inputWhatsApp"
+                                                      class="text_field form-control px-2 py-1"
+                                                      placeholder="Message"
+                                                      rows="3"
+                                                    ></textarea>
+                                                  </div>
+                                                  <div
+                                                    class="Whats-App_box_icons"
+                                                  >
+                                                    <div class="d-flex">
+                                                      <a
+                                                        href="#"
+                                                        class="Whats-App_box_icon_item bg-none"
+                                                        ><i
+                                                          class="fa-solid fa-plus"
+                                                        ></i
+                                                      ></a>
+                                                      <a
+                                                        href="#"
+                                                        class="Whats-App_box_icon_item bg-none"
+                                                        ><i
+                                                          class="fa-solid fa-microphone"
+                                                        ></i
+                                                      ></a>
+                                                    </div>
+                                                    <div>
+                                                      <a
+                                                        href="#"
+                                                        class="Whats-App_box_icon_item bg-none"
+                                                        ><i
+                                                          class="fa-solid fa-circle-chevron-right"
+                                                        ></i
+                                                      ></a>
+                                                    </div>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </th>
+
+                              <th>
+                                <button class="btn btn-primary blue px-1 py-1">
+                                  <img
+                                    src="./assets/images/table/tab2.png"
+                                    alt=""
+                                    srcset=""
+                                    class="table-img"
+                                  />
+                                </button>
+                              </th>
+                              <th>
+                                <button class="btn btn-primary blue px-1 py-1">
+                                  <img
+                                    src="./assets/images/table/tab3.png"
+                                    alt=""
+                                    srcset=""
+                                    class="table-img"
+                                  />
+                                </button>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody class="bg-white pad-10 bor-none">
+                            <tr
+                              onclick="window.location.href='./calltracker_cusdet.html'"
+                            >
+                              <!-- <td>1</td> -->
+                              <td>
+                                <input
+                                  class="checkbox_darkblue"
+                                  type="checkbox"
+                                  checked
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab2.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab3.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                            </tr>
+                            <tr
+                              onclick="window.location.href='./calltracker_cusdet.html'"
+                            >
+                              <!-- <td>1</td> -->
+                              <td>
+                                <input
+                                  class="checkbox_darkblue"
+                                  type="checkbox"
+                                  checked
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab2.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab3.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                            </tr>
+                            <tr
+                              onclick="window.location.href='./calltracker_cusdet.html'"
+                            >
+                              <!-- <td>1</td> -->
+                              <td>
+                                <input
+                                  class="checkbox_darkblue"
+                                  type="checkbox"
+                                  checked
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab2.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab3.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                            </tr>
+                            <tr
+                              onclick="window.location.href='./calltracker_cusdet.html'"
+                            >
+                              <!-- <td>1</td> -->
+                              <td>
+                                <input
+                                  class="checkbox_darkblue"
+                                  type="checkbox"
+                                  checked
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab2.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab3.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                            </tr>
+                            <tr
+                              onclick="window.location.href='./calltracker_cusdet.html'"
+                            >
+                              <!-- <td>1</td> -->
+                              <td>
+                                <input
+                                  class="checkbox_darkblue"
+                                  type="checkbox"
+                                  checked
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab2.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab3.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                            </tr>
+                            <tr
+                              onclick="window.location.href='./calltracker_cusdet.html'"
+                            >
+                              <!-- <td>1</td> -->
+                              <td>
+                                <input
+                                  class="checkbox_darkblue"
+                                  type="checkbox"
+                                  checked
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab2.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab3.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                            </tr>
+                            <tr
+                              onclick="window.location.href='./calltracker_cusdet.html'"
+                            >
+                              <!-- <td>1</td> -->
+                              <td>
+                                <input
+                                  class="checkbox_darkblue"
+                                  type="checkbox"
+                                  checked
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab2.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab3.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                            </tr>
+                            <tr
+                              onclick="window.location.href='./calltracker_cusdet.html'"
+                            >
+                              <!-- <td>1</td> -->
+                              <td>
+                                <input
+                                  class="checkbox_darkblue"
+                                  type="checkbox"
+                                  checked
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab2.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                              <td>
+                                <img
+                                  src="./assets/images/table/tab3.png"
+                                  alt=""
+                                  srcset=""
+                                  class="table-img"
+                                />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div
+                        class="flex-grow-1"
+                        style="overflow-x: scroll; overflow: hidden"
+                      >
+                        <div class="table-responsive table-wrapper">
+                          <table class="table table-striped text-center">
+                            <thead
+                              class="arrow table-fixed-header"
+                              style="top: 0; position: sticky"
+                            >
+                              <tr class="bg-white p-2">
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    S.No
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Mobile No
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Name
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    <img
+                                      src="./assets/images/table/tab2.png"
+                                      alt=""
+                                      srcset=""
+                                      class="table-img"
+                                    />
+                                    Time
+                                  </button>
+                                </th>
+
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    <img
+                                      src="./assets/images/table/tab3.png"
+                                      alt=""
+                                      srcset=""
+                                      class="table-img"
+                                    />
+                                    Time
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Date Added
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Last Call Date
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Talking Language
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Sign-Up Date
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Last Modified Date
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Last Deposite Date
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Data Source
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Agent Name
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Branch
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Platform Name
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    User Name
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Club Loyalty
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Active/InActive
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Call Status
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Lead Status
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Question 1
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Question 2
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Question 3
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Follow-Up-Date
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Amount
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    UTR No
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Received
+                                  </button>
+                                </th>
+                                <th>
+                                  <button class="btn btn-primary blue">
+                                    Call Duration
+                                  </button>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody class="">
+                              <tr
+                                onclick="window.location.href='./calltracker_cusdet.html'"
+                              >
+                                <td class="py-1">1</td>
+                                <td>9652314785</td>
+                                <td>Balaji</td>
+                                <td>14Times</td>
+                                <td>17Times</td>
+                                <td>Yesterday|07.35|15/03/2024</td>
+                                <td>Today|07.35|15/03/2024</td>
+                                <td>Marathi</td>
+                                <td>12/03/2024</td>
+                                <td>14/03/2024</td>
+                                <td>13/03/2024</td>
+                                <td>-</td>
+                                <td>Yash</td>
+                                <td>Shiv</td>
+                                <td>Sikanderexch</td>
+                                <td>sk001</td>
+                                <td>-</td>
+                                <td>Active</td>
+                                <td>
+                                  <button class="btn table-callbtn green">
+                                    Connected
+                                  </button>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1,30,00</td>
+                                <td>902986594309</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr
+                                onclick="window.location.href='./calltracker_cusdet.html'"
+                              >
+                                <td class="py-1">2</td>
+                                <td>9652314785</td>
+                                <td>Balaji</td>
+                                <td>14Times</td>
+                                <td>17Times</td>
+                                <td>Yesterday|07.35|15/03/2024</td>
+                                <td>Today|07.35|15/03/2024</td>
+                                <td>Marathi</td>
+                                <td>12/03/2024</td>
+                                <td>14/03/2024</td>
+                                <td>13/03/2024</td>
+                                <td>-</td>
+                                <td>Yash</td>
+                                <td>Shiv</td>
+                                <td>Sikanderexch</td>
+                                <td>sk001</td>
+                                <td>-</td>
+                                <td>Active</td>
+                                <td>
+                                  <button class="btn table-callbtn red">
+                                    Connected
+                                  </button>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1,30,00</td>
+                                <td>902986594309</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr
+                                onclick="window.location.href='./calltracker_cusdet.html'"
+                              >
+                                <td class="py-1">3</td>
+                                <td>9652314785</td>
+                                <td>Balaji</td>
+                                <td>14Times</td>
+                                <td>17Times</td>
+                                <td>Yesterday|07.35|15/03/2024</td>
+                                <td>Today|07.35|15/03/2024</td>
+                                <td>Marathi</td>
+                                <td>12/03/2024</td>
+                                <td>14/03/2024</td>
+                                <td>13/03/2024</td>
+                                <td>-</td>
+                                <td>Yash</td>
+                                <td>Shiv</td>
+                                <td>Sikanderexch</td>
+                                <td>sk001</td>
+                                <td>-</td>
+                                <td>Active</td>
+                                <td>
+                                  <button class="btn table-callbtn orange">
+                                    Connected
+                                  </button>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1,30,00</td>
+                                <td>902986594309</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr
+                                onclick="window.location.href='./calltracker_cusdet.html'"
+                              >
+                                <td class="py-1">4</td>
+                                <td>9652314785</td>
+                                <td>Balaji</td>
+                                <td>14Times</td>
+                                <td>17Times</td>
+                                <td>Yesterday|07.35|15/03/2024</td>
+                                <td>Today|07.35|15/03/2024</td>
+                                <td>Marathi</td>
+                                <td>12/03/2024</td>
+                                <td>14/03/2024</td>
+                                <td>13/03/2024</td>
+                                <td>-</td>
+                                <td>Yash</td>
+                                <td>Shiv</td>
+                                <td>Sikanderexch</td>
+                                <td>sk001</td>
+                                <td>-</td>
+                                <td>Active</td>
+                                <td>
+                                  <button class="btn table-callbtn neon">
+                                    Connected
+                                  </button>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1,30,00</td>
+                                <td>902986594309</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr
+                                onclick="window.location.href='./calltracker_cusdet.html'"
+                              >
+                                <td class="py-1">5</td>
+                                <td>9652314785</td>
+                                <td>Balaji</td>
+                                <td>14Times</td>
+                                <td>17Times</td>
+                                <td>Yesterday|07.35|15/03/2024</td>
+                                <td>Today|07.35|15/03/2024</td>
+                                <td>Marathi</td>
+                                <td>12/03/2024</td>
+                                <td>14/03/2024</td>
+                                <td>13/03/2024</td>
+                                <td>-</td>
+                                <td>Yash</td>
+                                <td>Shiv</td>
+                                <td>Sikanderexch</td>
+                                <td>sk001</td>
+                                <td>-</td>
+                                <td>Active</td>
+                                <td>
+                                  <button class="btn table-callbtn green">
+                                    Connected
+                                  </button>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1,30,00</td>
+                                <td>902986594309</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr
+                                onclick="window.location.href='./calltracker_cusdet.html'"
+                              >
+                                <td class="py-1">6</td>
+                                <td>9652314785</td>
+                                <td>Balaji</td>
+                                <td>14Times</td>
+                                <td>17Times</td>
+                                <td>Yesterday|07.35|15/03/2024</td>
+                                <td>Today|07.35|15/03/2024</td>
+                                <td>Marathi</td>
+                                <td>12/03/2024</td>
+                                <td>14/03/2024</td>
+                                <td>13/03/2024</td>
+                                <td>-</td>
+                                <td>Yash</td>
+                                <td>Shiv</td>
+                                <td>Sikanderexch</td>
+                                <td>sk001</td>
+                                <td>-</td>
+                                <td>Active</td>
+                                <td>
+                                  <button class="btn table-callbtn red">
+                                    Connected
+                                  </button>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1,30,00</td>
+                                <td>902986594309</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr
+                                onclick="window.location.href='./calltracker_cusdet.html'"
+                              >
+                                <td class="py-1">7</td>
+                                <td>9652314785</td>
+                                <td>Balaji</td>
+                                <td>14Times</td>
+                                <td>17Times</td>
+                                <td>Yesterday|07.35|15/03/2024</td>
+                                <td>Today|07.35|15/03/2024</td>
+                                <td>Marathi</td>
+                                <td>12/03/2024</td>
+                                <td>14/03/2024</td>
+                                <td>13/03/2024</td>
+                                <td>-</td>
+                                <td>Yash</td>
+                                <td>Shiv</td>
+                                <td>Sikanderexch</td>
+                                <td>sk001</td>
+                                <td>-</td>
+                                <td>Active</td>
+                                <td>
+                                  <button class="btn table-callbtn orange">
+                                    Connected
+                                  </button>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1,30,00</td>
+                                <td>902986594309</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr
+                                onclick="window.location.href='./calltracker_cusdet.html'"
+                              >
+                                <td class="py-1">8</td>
+                                <td>9652314785</td>
+                                <td>Balaji</td>
+                                <td>14Times</td>
+                                <td>17Times</td>
+                                <td>Yesterday|07.35|15/03/2024</td>
+                                <td>Today|07.35|15/03/2024</td>
+                                <td>Marathi</td>
+                                <td>12/03/2024</td>
+                                <td>14/03/2024</td>
+                                <td>13/03/2024</td>
+                                <td>-</td>
+                                <td>Yash</td>
+                                <td>Shiv</td>
+                                <td>Sikanderexch</td>
+                                <td>sk001</td>
+                                <td>-</td>
+                                <td>Active</td>
+                                <td>
+                                  <button class="btn table-callbtn neon">
+                                    Connected
+                                  </button>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1,30,00</td>
+                                <td>902986594309</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr
+                                onclick="window.location.href='./calltracker_cusdet.html'"
+                              >
+                                <td class="py-1">9</td>
+                                <td>9652314785</td>
+                                <td>Balaji</td>
+                                <td>14Times</td>
+                                <td>17Times</td>
+                                <td>Yesterday|07.35|15/03/2024</td>
+                                <td>Today|07.35|15/03/2024</td>
+                                <td>Marathi</td>
+                                <td>12/03/2024</td>
+                                <td>14/03/2024</td>
+                                <td>13/03/2024</td>
+                                <td>-</td>
+                                <td>Yash</td>
+                                <td>Shiv</td>
+                                <td>Sikanderexch</td>
+                                <td>sk001</td>
+                                <td>-</td>
+                                <td>Active</td>
+                                <td>
+                                  <button class="btn table-callbtn green">
+                                    Connected
+                                  </button>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1,30,00</td>
+                                <td>902986594309</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- box 2 Ends -->
+            <!-- box 2 Ends -->
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+
+          <!-- apply filter -->
+          <!-- Button trigger modal -->
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyfilter">
+  Launch demo modal
+</button> -->
+
+          <!-- Modal -->
+          <div
+            class="modal fade modal_left_spacing"
+            id="applyfilter"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-100 modal-xl">
+              <div class="modal-content pop-bg">
+                <div class="modal-body pt-5 pb-4">
+                  <div class="row">
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Data Bank</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Branch</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Campaign</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Call Status</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Lead Status</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Agent</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Platform Name</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Club Royality</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Talking Language</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Untch Data Form</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Untch Data To</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="d-flex justify-content-center">
+                        <div class="my-2">
+                          <button
+                            class="btn btn-primary bg-blue w-100 text-black px-3 fs-16 fw-600 rounded border-0 py-2"
+                          >
+                            Apply Filter
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- apply filter end -->
+
+          <!-- Tranfer page -->
+          <!-- Button trigger modal -->
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferpop">
+  Transfer
+</button> -->
+
+          <!-- Modal -->
+          <div
+            class="modal fade modal_left_spacing"
+            id="transferpop"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-100 modal-xl">
+              <div class="modal-content pop-bg">
+                <div class="modal-body">
+                  <div class="d-flex mx-2 mt-2 xlgap-15 mb-0">
+                    <div class="radiocheckbox flex-fill">
+                      <!-- radio -->
+
+                      <div class="text-white px-2 pr-5">
+                        <h5 class="fs-12">
+                          Data Bank
+                          <spr class="text-danger fs-13">*</spr>
+                        </h5>
+                        <div class="d-flex justify-content-between">
+                          <div class="form-check m-0">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios"
+                              id="exampleRadios1"
+                              value="option1"
+                              checked=""
+                            />
+                            <label
+                              class="form-check-label text-white fs-15"
+                              for="flexCheckDefault"
+                            >
+                              Balaji
+                              <i class="input-helper"></i
+                            ></label>
+                          </div>
+                          <div>
+                            <p class="mb-0">1000</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- radio end -->
+                    </div>
+
+                    <div class="radiocheckbox flex-fill">
+                      <!-- radio -->
+                      <div class="radiocheckbox flex-fill">
+                        <!-- radio -->
+
+                        <div class="text-white px-3">
+                          <h5 class="fs-12">
+                            No of Leads
+                            <spr class="text-danger">*</spr>
+                          </h5>
+                          <div class="form-check m-0">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios5"
+                              id=""
+                              value=""
+                              checked=""
+                            />
+                            <label
+                              class="form-check-label text-white fs-15"
+                              for="flexCheckDefault"
+                            >
+                              All
+                              <i class="input-helper"></i
+                            ></label>
+                          </div>
+                          <div class="form-check m-0">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios5"
+                              id=""
+                              value=""
+                            />
+                            <label
+                              class="form-check-label text-white fs-15"
+                              for="flexCheckChecked"
+                            >
+                              10 Each
+                              <i class="input-helper"></i
+                            ></label>
+                          </div>
+
+                          <div class="form-check m-0">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios5"
+                              id=""
+                              value=""
+                            />
+                            <label
+                              class="form-check-label text-white text-white fs-15"
+                              for="flexCheckChecked"
+                            >
+                              25 Each
+                              <i class="input-helper"></i
+                            ></label>
+                          </div>
+                          <div class="form-check m-0">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios5"
+                              id=""
+                              value=""
+                            />
+                            <label
+                              class="form-check-label text-white fs-15"
+                              for="flexCheckChecked"
+                            >
+                              50 Each
+                              <i class="input-helper"></i
+                            ></label>
+                          </div>
+                          <div class="form-check m-0">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios5"
+                              id=""
+                              value=""
+                            />
+                            <label
+                              class="form-check-label text-white fs-15"
+                              for="flexCheckChecked"
+                            >
+                              100 Each
+                              <i class="input-helper"></i
+                            ></label>
+                          </div>
+                        </div>
+
+                        <!-- radio end -->
+                      </div>
+
+                      <!-- radio end -->
+                    </div>
+                    <div class="radiocheckbox flex-fill">
+                      <!-- radio -->
+
+                      <div class="text-white px-2">
+                        <h5 class="fs-12">
+                          Branch
+                          <!-- <spr class="text-danger">*</spr> -->
+                        </h5>
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                            checked=""
+                          />
+                          <label
+                            class="form-check-label text-white fs-15"
+                            for="flexCheckDefault"
+                          >
+                            Shiv
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            parvati
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+                      </div>
+
+                      <!-- radio end -->
+                    </div>
+
+                    <div class="radiocheckbox flex-fill">
+                      <!-- radio -->
+
+                      <div class="text-white px-2">
+                        <h5 class="fs-12">
+                          Agent
+                          <!-- <spr class="text-danger">*</spr> -->
+                        </h5>
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white fs-15"
+                            for="flexCheckDefault"
+                          >
+                            Suresh
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            Aditi
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            Ramesh
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            Suresh
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            Rahul
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            Ram
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            Shilpa
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            Sita
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="exampleRadios2"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white"
+                            for="flexCheckChecked"
+                          >
+                            Shyam
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+                      </div>
+
+                      <!-- radio end -->
+                    </div>
+                    <div class="radiocheckbox flex-fill">
+                      <!-- radio -->
+
+                      <div class="text-white px-2">
+                        <h5 class="fs-12">
+                          Campaign
+                          <!-- <spr class="text-danger">*</spr> -->
+                        </h5>
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios3"
+                            id=""
+                            value=""
+                            checked=""
+                          />
+                          <label
+                            class="form-check-label text-white fs-15"
+                            for="flexCheckDefault"
+                          >
+                            Retension
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios3"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white fs-15"
+                            for="flexCheckChecked"
+                          >
+                            XYZ
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+                      </div>
+
+                      <!-- radio end -->
+                    </div>
+                    <div class="radiocheckbox flex-fill">
+                      <!-- radio -->
+
+                      <div class="text-white px-2">
+                        <h5 class="fs-12">
+                          Data Sheet
+                          <!-- <spr class="text-danger">*</spr> -->
+                        </h5>
+
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios4"
+                            id=""
+                            value=""
+                            checked=""
+                          />
+                          <label
+                            class="form-check-label text-white fs-15"
+                            for="flexCheckDefault"
+                          >
+                            <span class="" style="color: #e2782d">4</span
+                            ><i>mins</i> <i class="input-helper"></i
+                          ></label>
+                        </div>
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios4"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white fs-15"
+                            for="flexCheckChecked"
+                          >
+                            Call Sheet
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+                        <div class="form-check m-0">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios4"
+                            id=""
+                            value=""
+                          />
+                          <label
+                            class="form-check-label text-white text-white fs-15"
+                            for="flexCheckChecked"
+                          >
+                            Retension
+                            <i class="input-helper"></i
+                          ></label>
+                        </div>
+                      </div>
+
+                      <!-- radio end -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 my-2 mb-3">
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="btn bg-darkblack mx-2 px-5 fs-15 fw-500 text-neonblue br-grey border_radius_7 py-2"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      class="btn bg-blue mx-2 px-5 fs-15 fw-700 text-dark border_radius_7 py-2"
+                    >
+                      Update
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Trabsfer page end -->
+
+          <!-- Button trigger modal -->
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#massupdate">
+  Mass Update
+</button> -->
+
+          <!-- Modal -->
+          <div
+            class="modal fade modal_left_spacing"
+            id="massupdate"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-100">
+              <div class="modal-content pop-bg">
+                <!-- <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+                <div class="modal-body">
+                  <h4>Mass Update</h4>
+
+                  <div>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="dropdown min-w-100">
+                          <button
+                            class="btn btn-secondary dropdown-toggle w-100"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Select a Field
+                          </button>
+                          <ul class="dropdown-menu p-0 min-w-100" id="nametype">
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Taking language</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" id="city-item" href="#"
+                                >City</a
+                              >
+                            </li>
+                            <!-- Added id for City -->
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Club Royality</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Active / Inactive</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-8">
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-secondary dropdown-toggle w-100"
+                            id="openlist-btn"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Select Option
+                          </button>
+                          <ul class="dropdown-menu p-0 w-100" id="openlist">
+                            <li><a class="dropdown-item" href="#">City1</a></li>
+                            <li><a class="dropdown-item" href="#">City2</a></li>
+                            <li><a class="dropdown-item" href="#">City3</a></li>
+                            <li><a class="dropdown-item" href="#">City4</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 my-2 mt-4">
+                    <div class="d-flex justify-content-center">
+                      <button
+                        class="btn bg-darkblack mx-2 px-5 fs-15 fw-500 text-neonblue br-grey border_radius_7 py-2"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        class="btn bg-blue mx-2 px-5 fs-15 fw-700 text-dark border_radius_7 py-2"
+                      >
+                        Update
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Trabsfer page end -->
+
+            <!-- partial -->
+          </div>
+          <!-- main-panel ends -->
+
+          <!-- whatapp -->
+          <!-- Button trigger modal -->
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#whatup">
+  what
+</button> -->
+
+          <!-- Modal -->
+          <div
+            class="modal fade modal_left_spacing"
+            id="whatup"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-100">
+              <div class="modal-content pop-bg">
+                <div class="modal-body py-0 px-0">
+                  <div>
+                    <form class="w-100 my-3 px-2">
+                      <div class="mx-2 mb-2 channel-partner-edit-branch">
+                        <label
+                          for="inputWhatsApp"
+                          class="form-label mb-1 fs-15 fs-600 text-white"
+                          >Type Whats-App</label
+                        >
+                        <textarea
+                          id="inputWhatsApp"
+                          class="text_field form-control px-2 py-1"
+                          placeholder="Message"
+                          rows="7"
+                        ></textarea>
+                      </div>
+                      <div
+                        class="Whats-App_box_icons br-grey"
+                        style="height: 35px !important"
+                      >
+                        <div class="d-flex">
+                          <a href="#" class="Whats-App_box_icon_item bg-none"
+                            ><i class="fa-solid fa-plus"></i
+                          ></a>
+                          <a href="#" class="Whats-App_box_icon_item bg-none"
+                            ><i class="fa-solid fa-microphone"></i
+                          ></a>
+                        </div>
+                        <div>
+                          <a href="#" class="Whats-App_box_icon_item bg-none"
+                            ><i class="fa-solid fa-circle-chevron-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Trabsfer page end -->
+
+            <!-- partial -->
+          </div>
+          <!-- main-panel ends -->
+
+          <!-- whatapp -->
+          <!-- Button trigger modal -->
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sms">
+  SMS
+</button> -->
+
+          <!-- Modal -->
+          <div
+            class="modal fade modal_left_spacing"
+            id="sms"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-100">
+              <div class="modal-content pop-bg">
+                <div class="modal-body py-0 px-0">
+                  <div>
+                    <form class="w-100 my-3 px-2">
+                      <div class="mx-2 mb-2 channel-partner-edit-branch">
+                        <label
+                          for="inputWhatsApp"
+                          class="form-label mb-1 fs-15 fs-600 text-white"
+                          >Type SMS</label
+                        >
+                        <textarea
+                          id="inputWhatsApp"
+                          class="text_field form-control px-2 py-1"
+                          placeholder="Message"
+                          rows="7"
+                        ></textarea>
+                      </div>
+                      <div
+                        class="Whats-App_box_icons br-grey"
+                        style="height: 35px !important"
+                      >
+                        <div class="d-flex">
+                          <a href="#" class="Whats-App_box_icon_item bg-none"
+                            ><i class="fa-solid fa-plus"></i
+                          ></a>
+                          <a href="#" class="Whats-App_box_icon_item bg-none"
+                            ><i class="fa-solid fa-microphone"></i
+                          ></a>
+                        </div>
+                        <div>
+                          <a href="#" class="Whats-App_box_icon_item bg-none"
+                            ><i class="fa-solid fa-circle-chevron-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Trabsfer page end -->
+
+            <!-- partial -->
+          </div>
+          <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script>
+      const swiperEl = document.querySelector("swiper-container");
+      Object.assign(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          clickable: true,
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      swiperEl.initialize();
+    </script>
+
+    <script>
+      document.querySelector(".mySwiper").initialize({
+        // Add your Swiper options here
+        pagination: false,
+      });
+    </script>
+
+    <!-- <script>
+      // Select all buttons with the class 'myButton'
+      const buttons = document.querySelectorAll(".btns");
+
+      // Loop through each button and add a click event listener
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          // Remove 'active' class from all buttons
+          buttons.forEach((btn) => btn.classList.remove("active"));
+
+          // Add 'active' class to the clicked button
+          this.classList.add("active");
+        });
+      });
+    </script> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var dropdownSubmenus = document.querySelectorAll(".dropdown-submenu");
+
+        dropdownSubmenus.forEach(function (submenu) {
+          submenu.addEventListener("click", function (e) {
+            e.stopPropagation();
+            event.preventDefault();
+
+            // Toggle the clicked submenu
+            var nextEl = this.querySelector(".dropdown-menu");
+            if (nextEl) {
+              nextEl.classList.toggle("show");
+            }
+
+            // Close other open submenus within the same parent
+            dropdownSubmenus.forEach(function (sibling) {
+              if (sibling !== submenu) {
+                var siblingSubmenu = sibling.querySelector(".dropdown-menu");
+                if (siblingSubmenu) {
+                  siblingSubmenu.classList.remove("show");
+                }
+              }
+            });
+          });
+        });
+
+        // Prevent dropdown from closing when clicking inside the form
+        document
+          .querySelectorAll(".dropdown-menu .dropdown_menu_one")
+          .forEach(function (menu) {
+            menu.addEventListener("click", function (e) {
+              e.stopPropagation();
+            });
+          });
+      });
+    </script>
+
+    <script>
+      // Select all buttons with the class 'btns'
+      const buttons = document.querySelectorAll(".btns");
+
+      // Select the specific button and dropdown you want to show/hide
+      const filterButton = document.querySelector(
+        ".btn.bg-darkblack.datatable-br.h-32"
+      );
+      const dropdownButton = document.querySelector(".dropdown");
+
+      // Loop through each button and add a click event listener
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          // Remove 'active' class from all buttons
+          buttons.forEach((btn) => btn.classList.remove("active"));
+
+          // Add 'active' class to the clicked button
+          this.classList.add("active");
+
+          // Logic for hiding/showing based on the button text
+          const buttonText = this.innerText.trim(); // Get the button text
+
+          if (
+            buttonText.includes("Call Sheet") ||
+            buttonText.includes("Lead Master") ||
+            buttonText.includes("mins")
+          ) {
+            // Show the filter button and dropdown
+            filterButton.style.display = "block"; // Make it visible
+            dropdownButton.style.display = "block"; // Make it visible
+          } else {
+            // Hide the filter button and dropdown
+            filterButton.style.display = "none";
+            dropdownButton.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Tele CRM</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/jvectormap/jquery-jvectormap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.theme.default.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <style>
+      .form-check-input:checked {
+        background-color: #1e344b !important; /* Change to your desired color */
+        border-color: #007bff; /* Match border color */
+        accent-color: #0cfbf4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <img
+        src="./assets/images/logo.png"
+        alt="Loading"
+        class="rotating-image"
+        class="w-100"
+      />
+    </div>
+
+    <div class="container-scroller">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div
+          class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
+        >
+          <div class="px-2">
+            <div
+              class="d-flex justify-content-evenly align-items-center"
+              href="index.html"
+            >
+              <img src="assets/images/seka.png" alt="logo" class="w-17 mr-15" />
+              <span class="text-white fs-20 fw-lighter">Seemasikander</span>
+            </div>
+          </div>
+        </div>
+        <ul class="nav">
+          <!-- <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li> -->
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/1.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <div class="menu-title clr-50"><span>Dashboard</span></div>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/2.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-50">Users</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./Calltracker.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/3.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-50">Call Tracker</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./uploadata.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/4.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title">Upload Data</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./Transferdata.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/5act.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title active">Transfer Data</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./Databank.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/6.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title">Data Bank</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./Linetracker.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/7.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title">Link Tracker</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="links.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/8.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-70">Links</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/9.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-70">Reports</span>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./setting.html">
+              <span class="menu-icon">
+                <img
+                  src="./assets/images/sideicon/10.png"
+                  alt=""
+                  srcset=""
+                  class="w-100"
+                />
+              </span>
+              <span class="menu-title clr-70">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div
+            class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center"
+          >
+            <a class="navbar-brand brand-logo-mini" href="index.html"
+              ><img src="assets/images/logo-mini.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button
+              class="navbar-toggler navbar-toggler align-self-center"
+              type="button"
+              data-toggle="minimize"
+            >
+              <span class="mdi mdi-menu"></span>
+            </button>
+
+            <button
+              class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+              type="button"
+              data-toggle="offcanvas"
+            >
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="container mt-5">
+              <!-- <button class="btn btn-primary">Update</button> -->
+
+              <!-- Alert Section -->
+              <div class="w-100 d-flex justify-content-center">
+                <div
+                  id="successAlert"
+                  class="alert alert-success alert-dismissible fade py-1 px-2"
+                  role="alert"
+                  style="
+                    display: none;
+                    position: absolute;
+                    top: 16px;
+                    z-index: 99999;
+                    display: flex;
+                    background: #20fb0c;
+                    color: #000;
+                    font-weight: 600;
+                    max-width: 200px;
+                  "
+                >
+                  <i class="mdi mdi-check-circle fs-1"></i> Update successful!
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card br-blue vh-75 br-10" style="height: 82vh">
+                  <div class="card-body bg-mainblac rounded-pill p-2">
+                    <div class="mb-2">
+                      <h4 class="card-title fw-400 fw-17 my-2 px-4 mb-3">
+                        Edit Branch
+                      </h4>
+                    </div>
+
+                    <div class="col-md-12 p-0">
+                      <div
+                        class="p-4 br-darkblue br-10 mx-4 vh-78"
+                        style="height: 74vh"
+                      >
+                        <div
+                          class="col-md-12 tranferdata-box overflow-hidden rounded br-blue transfer p-0 bg-darkblue h-100"
+                        >
+                          <div class="h-100 d-flex align-content-center px-3">
+                            <form class="w-100 my-3">
+                              <div class="mb-3">
+                                <label
+                                  for="exampleInputEmail1"
+                                  class="form-label mb-1 fs-15 fs-600"
+                                  >Name
+                                </label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+
+                              <div class="d-flex justify-content-center">
+                                <div class="my-4">
+                                  <div
+                                    id="updateButton"
+                                    class="btn btn-primary bg-blue w-100 text-black px-3 fs-16 fw-600 rounded border-0 py-2"
+                                  >
+                                    Update Details
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+     // Show the alert when the button is clicked
+document
+  .getElementById("updateButton")
+  .addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent the click from propagating to the document
+    const alert = document.getElementById("successAlert");
+    alert.style.display = "block";
+    alert.classList.add("show");
+
+    // Automatically hide the alert after 3 seconds
+    setTimeout(() => {
+      alert.style.display = "none";
+      alert.classList.remove("show");
+    }, 3000); // 3000ms = 3 seconds
+  });
+
+// Close the alert when clicking outside
+document.addEventListener("click", function (event) {
+  const alert = document.getElementById("successAlert");
+  const button = document.getElementById("updateButton");
+  const isClickInsideAlert = alert.contains(event.target);
+  const isClickOnButton = button.contains(event.target);
+
+  if (!isClickInsideAlert && !isClickOnButton) {
+    alert.style.display = "none";
+    alert.classList.remove("show");
+  }
+});
+
+
+      
+    </script>
+  </body>
+</html>

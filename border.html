@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Border Design</title>
+
+    <link
+    rel="stylesheet"
+    href="assets/vendors/mdi/css/materialdesignicons.min.css"
+  />
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link
+    rel="stylesheet"
+    href="assets/vendors/jvectormap/jquery-jvectormap.css"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/vendors/owl-carousel-2/owl.carousel.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/vendors/owl-carousel-2/owl.theme.default.min.css"
+  />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <style>
+        /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+} */
+
+.custom-border {
+    position: relative;
+    padding: 0px;
+    background: #191c24;
+    border: 4px solid #1e6381;
+    width: 100%;
+    /* max-width: 800px; */
+    border-radius: 10px;
+}
+
+.custom-border::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #1e6381;
+    background-color: #ffffff;
+}
+
+.custom-border::before {
+    top: 41px;
+    left: -15px;
+    border-right: none;
+    border-bottom: none;
+    background: #191c24;
+    transform: rotate(-45deg);
+    border-radius: 7px 0 0 0px;
+}
+
+
+
+.custom-border .content {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-border .arrow-left,
+.custom-border .arrow-right,
+.custom-border .arrow-top,
+.custom-border .arrow-bottom {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #f7901e;
+    transform: rotate(45deg);
+}
+
+.custom-border .arrow-left {
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.custom-border .arrow-right {
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.custom-border .arrow-top {
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.custom-border .arrow-bottom {
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+    </style>
+</head>
+<body>
+  <div class="m-4 position-relative">
+    <!-- arrows starts -->
+    <div
+      class="right_side_arrow d-flex justify-content-between " style="top: -23px;
+    position: relative;"
+    >
+      <img
+        src="./assets/images/arrow/right (1).png"
+        alt=""
+        class="right_arrow_1"
+      />
+      <img
+        src="./assets/images/arrow/right (2).png"
+        alt=""
+        class="right_arrow_2"
+      />
+    </div>
+    <div class="right_side_down">
+      <img
+        src="./assets/images/arrow/down.png"
+        alt=""
+        class="right_arrow_1"
+      />
+    </div>
+    <!-- arrow Ends -->
+    <div class="custom-border">
+        <div class="content">
+          <div
+        class="col-md-12 p-0"
+      >
+        <div class="p-1 br-10 position-relative rounded" style="height: 40vh">
+          <div
+            class="uploaddata inner-box-card overflow-hidden rounded br-blue m-0 w-100 h-100"
+          >
+          <div class="h-100 d-flex align-content-center">
+            <div class="card bg-darkblue h-100 mt-5 border-0 w-100">
+                <div class="row flex-nowrap px-4">
+                  <div class="col-xl-4 ">
+                    <!-- form -->
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Data Bank <span class="text-danger fs-15">*</span></label
+                        >
+                        <input
+                          type="email"
+                          class="form-control bg-transparent rounded br-white rounded"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                    </form>
+                    <!-- form end -->
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="mb-3">
+                      <label for="formFileMultiple" class="form-label"
+                        >SelectFile <span class="text-danger fs-15">*</span></label
+                      >
+                      <input
+                        class="form-control bg-transparent br-white rounded border-0"
+                        type="file"
+                        id="formFileMultiple"
+                        multiple
+                        class="w-100"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 d-flex align-items-center">
+                    <div class="row gap-10 align-items-center mt-3 flex-nowrap">
+                      <div class="col-lg-6 p-0">
+                        <button
+                          class="btn btn-primary bg-blue border-0 w-143 text-black fw-500  d-flex align-items-center"
+                        >
+                          Submit Files
+                        </button>
+                      </div>
+                      <div class="col-lg-6 p-0">
+                        <button
+                          class="btn btn-primary bg-orange border-0 w-143 text-black fw-500 d-flex align-items-center"
+                        >
+                        <i class="mdi mdi-download fs-20"></i>
+                          Sample Files 
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+          </div>
+        </div>
+      </div>
+        </div>
+    </div>
+    <!-- arrow starts -->
+    <div class="left_side_up position-relative" style="left: -20px;
+    top: -10px;
+    position: absolute !important;
+    top: 82px;">
+      <img
+        src="./assets/images/arrow/up.png"
+        alt=""
+        class="left_arrow_1"
+      />
+    </div>
+
+    
+
+    <div
+      class="left_side_arrow d-flex justify-content-between"
+    >
+      <img
+        src="./assets/images/arrow/left (2).png"
+        alt=""
+        class="left_arrow_1"
+      />
+      <img
+        src="./assets/images/arrow/left (1).png"
+        alt=""
+        class="left_arrow_2"
+      />
+    </div>
+    <!-- arrow ends -->
+</div>
+
+</body>
+</html>

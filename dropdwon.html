@@ -1,0 +1,282 @@
+<style>
+    
+     
+    .dropdown-item {
+            border-top: 1px solid rgba(255, 255, 255, 0.427);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.558);
+            margin-bottom: 1px;
+            color: white;
+            list-style: none;
+            background-color: #011825;
+        }
+
+        .dropdown-item:hover {
+            background-color: #011825 !important;
+            color: white !important;
+        }
+
+        .dropdown-item:focus {
+            background-color: #011825 !important;
+            outline: none !important;
+            color: white !important;
+        }
+
+        .dropdown-item:active {
+            background-color: #011825 !important;
+            outline: none !important;
+            color: white !important;
+        }
+
+        .dropdown-item.one {
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .dropdown-item.five {
+            border-bottom: 0px solid white !important;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
+        .dropdown-menu .dropdown_menu_one {
+            background-color: #00394D !important;
+            width: 255px !important;
+            border: 1px solid #0CFBF4 !important;
+        }
+
+        .dropdown-menu .dropdown_menu_one li a {
+            background-color: #00394D !important;
+            border: none !important;
+            border-radius: 10px !important;
+        }
+
+        .Whats-App_box_icons {
+            border: 1px solid white !important;
+            width: 208px !important;
+            height: 21px !important;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            margin-left: 10px;
+            background-color: #011825 !important;
+        }
+
+        .Whats-App_box_icons .Whats-App_box_icon_item {
+            font-size: 13px !important;
+            margin-left: 5px !important;
+            margin-right: 5px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none !important;
+            color: #0CFBF4 !important;
+            background-color: #011825 !important;
+        }
+
+        .text_field.form-control {
+            margin-left: 10px !important;
+            width: 208px !important;
+            height: 62px !important;
+        }
+
+        .form-control:active {
+            border: none !important;
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        .dropdown .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding:5px;
+  }
+
+  .dropdown .dropdown-menu .dropdown-item {
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+}
+
+.dropdown-menu.p-0.m-0.show {
+    min-width: 8rem !important;
+    left: -8px !important;
+    top: 4px !important;
+}
+</style>
+
+<th class="">
+    <div class="d-flex justify-content-center">
+      <div class="dropdown">
+          <div class="m-0 p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="./assets/images/table/tab1.png" alt="" class="table-img" width="20" />
+          </div>
+          <div class="dropdown-menu p-0 m-0" aria-labelledby="dropdownMenuButton1">
+              <ul class="dropdown-lists list-unstyled m-0" style="left: -9px !important;
+top: 3px !important;">
+                  <li><a class="dropdown-item one" href="#">All</a></li>
+                  <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">Transfer to Agent</a>
+                      <ul class="dropdown-menu dropdown_menu_one mx-1">
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="first_dropdown_box">
+                                      <form class="w-100 p-2">
+                                          <div class="mb-3 channel-partner-edit-branch text-left" >
+                                              <label for="inputName" class="form-label mb-1 fs-15 fs-600 text-left">Agent
+                                                  Name</label>
+                                              <input type="text" class="form-control" id="inputName"
+                                                  placeholder="Name" aria-describedby="nameHelp">
+                                          </div>
+                                          <div class="mb-3 channel-partner-edit-branch text-left">
+                                              <label for="inputUploadedDate" class="form-label mb-1 fs-15 fs-600 text-left">
+                                                  Our Growth
+                                              </label>
+                                              <input type="text" class="form-control" id="inputUploadedDate"
+                                                  placeholder="Our Growth" aria-describedby="uploadedDateHelp">
+                                          </div>
+                                      </form>
+                                  </div>
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">Transfer To Bank</a>
+                      <ul class="dropdown-menu dropdown_menu_one mx-1">
+                          <li>
+                              <a class="dropdown-item" href="#">
+                                  <div class="first_dropdown_box">
+                                      <form class="w-100 p-2">
+                                          <div class="mb-3 channel-partner-edit-branch text-left">
+                                              <label for="inputName" class="form-label mb-1 fs-15 fs-600">
+                                                  Bank Name</label>
+                                              <input type="text" class="form-control" id="inputName"
+                                                  placeholder="Name" aria-describedby="nameHelp">
+                                          </div>
+                                          <div class="mb-3 channel-partner-edit-branch position-relative text-left">
+                                              <label for="inputUploadedDate" class="form-label mb-1 fs-15 fs-600">
+                                                  Remark
+                                              </label>
+                                              <input type="text" class="form-control" id="inputUploadedDate"
+                                                  placeholder="Our Growth" aria-describedby="uploadedDateHelp">
+                                          </div>
+                                      </form>
+                                  </div>
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">Whats-App</a>
+                      <ul class="dropdown-menu dropdown_menu_one mx-1">
+                          <li>
+                              <div class="first_dropdown_box">
+                                  <form class="w-100 my-3">
+                                      <div class="ml-3 mb-2 channel-partner-edit-branch">
+                                          <label for="inputWhatsApp"
+                                              class="form-label mb-1 mx-2 fs-15 fs-600 text-white">Type
+                                              Whats-App</label>
+                                          <textarea id="inputWhatsApp" class="text_field form-control"
+                                              placeholder="message" rows="3"></textarea>
+                                      </div>
+                                      <div class="Whats-App_box_icons">
+                                          <div class="d-flex">
+                                              <a href="#" class="Whats-App_box_icon_item"><i
+                                                      class="fa-solid fa-plus"></i></a>
+                                              <a href="#" class="Whats-App_box_icon_item"><i
+                                                      class="fa-solid fa-microphone"></i></a>
+                                          </div>
+                                          <div>
+                                              <a href="#" class="Whats-App_box_icon_item"><i
+                                                      class="fa-solid fa-greater-than"></i></a>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                      <a class="dropdown-item five" href="#">Sms</a>
+                      <ul class="dropdown-menu dropdown_menu_one mx-1">
+                          <li>
+                              <div class="first_dropdown_box">
+                                  <form class="w-100 my-3">
+                                      <div class="ml-3 mb-2 channel-partner-edit-branch">
+                                          <label for="inputSms"
+                                              class="form-label mb-1 mx-2 fs-15 fs-600 text-white">Type
+                                              SMS</label>
+                                          <textarea id="inputSms" class="text_field form-control"
+                                              placeholder="message" rows="3"></textarea>
+                                      </div>
+                                      <div class="Whats-App_box_icons">
+                                          <div class="d-flex">
+                                              <a href="#" class="Whats-App_box_icon_item"><i
+                                                      class="fa-solid fa-plus"></i></a>
+                                              <a href="#" class="Whats-App_box_icon_item"><i
+                                                      class="fa-solid fa-microphone"></i></a>
+                                          </div>
+                                          <div>
+                                              <a href="#" class="Whats-App_box_icon_item"><i
+                                                      class="fa-solid fa-greater-than"></i></a>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  </th>
+
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var dropdownSubmenus = document.querySelectorAll('.dropdown-submenu');
+    
+        dropdownSubmenus.forEach(function (submenu) {
+            submenu.addEventListener('click', function (e) {
+                e.stopPropagation();
+                event.preventDefault();
+    
+                // Toggle the clicked submenu
+                var nextEl = this.querySelector('.dropdown-menu');
+                if (nextEl) {
+                    nextEl.classList.toggle('show');
+                }
+    
+                // Close other open submenus within the same parent
+                dropdownSubmenus.forEach(function (sibling) {
+                    if (sibling !== submenu) {
+                        var siblingSubmenu = sibling.querySelector('.dropdown-menu');
+                        if (siblingSubmenu) {
+                            siblingSubmenu.classList.remove('show');
+                        }
+                    }
+                });
+            });
+        });
+    
+        // Prevent dropdown from closing when clicking inside the form
+        document.querySelectorAll('.dropdown-menu .dropdown_menu_one').forEach(function (menu) {
+            menu.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        });
+    });
+    </script>
