@@ -109,56 +109,109 @@
         width: 38.6%;
       }
 
-      .w-46{
+      .w-46 {
         width: 46% !important;
       }
 
-      .w-54{
+      .w-54 {
         width: 54% !important;
       }
-      .d-flex.justify-content-end.px-1.pr-3.fs-15 ,
+      .d-flex.justify-content-end.px-1.pr-3.fs-15,
       .d-flex.justify-content-end.px-1.pr-3 {
-    height: 20px;
-    font-size: 13px !important;
-}
-
-.w-100.d-flex.justify-content-between.mb-1 .px-1.text-white.fs-15{
-  font-size: 13px !important;
-}
-
-.deep_teal_fullborder.text-center.py-2.px-2{
-    max-width: 83px !important;
-    height: 79px !important;
-    font-size: 23px;
-}
-
-.col-lg-7.d-flex.justify-content-around.px-1::before {
-    content: "";
-    position: absolute;
-    width: 3px;
-    background: #48819e;
-    left: 0;
-    height: 204px;
-    top: -7px;
-}
-  
-      @media(min-width:1200px){
-        .top-headimg {
-    height: 260px;
-}
+        height: 20px;
+        font-size: 13px !important;
       }
 
-      @media(min-width:1000px) and (max-width:1200px){
-        .top-headimg {
-    height: 260px;
-}
-    }
-    </style>
+      .w-100.d-flex.justify-content-between.mb-1 .px-1.text-white.fs-15 {
+        font-size: 13px !important;
+      }
 
-    <!-- kgiuihui -->
+      .deep_teal_fullborder.text-center.py-2.px-2 {
+        max-width: 83px !important;
+        height: 79px !important;
+        font-size: 23px;
+      }
+
+      .col-lg-7.d-flex.justify-content-around.px-1::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        background: #48819e;
+        left: 0;
+        height: 204px;
+        top: -7px;
+      }
+
+      @media (min-width: 1200px) {
+        .top-headimg {
+          height: 260px;
+        }
+      }
+
+      @media (min-width: 1000px) and (max-width: 1200px) {
+        .top-headimg {
+          height: 260px;
+        }
+      }
+      .clip-path_box-2_bottom_sr_out {
+        padding: 3px;
+        position: relative;
+        overflow: hidden;
+        background-color: #48819e;
+        /* clip-path: polygon(0 20%, 10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%); */
+        clip-path: polygon(
+          0 100%,
+          0 0,
+          100% 0,
+          100% 0%,
+          100% 54%,
+          88% 100%,
+          13% 100%,
+          0% 53%
+        );
+        clip-path: polygon(
+          0 100%,
+          0 0,
+          100% 0,
+          100% 0%,
+          100% 54%,
+          88% 100%,
+          14% 100%,
+          0% 53%
+        );
+      }
+
+      .clip-path_box-2_bottom_sr_out .clip-path_box-2_bottom_sr_in {
+        clip-path: polygon(
+          0 100%,
+          0 0,
+          100% 0,
+          100% 0%,
+          100% 50%,
+          90% 100%,
+          10% 100%,
+          0% 53%
+        );
+        background-color: #011825;
+        clip-path: polygon(
+          0 100%,
+          0 0,
+          100% 0,
+          100% 0%,
+          100% 52%,
+          88% 100%,
+          14% 100%,
+          0% 52%
+        );
+      }
+      /* clip-path: polygon(0 100%, 0 0, 100% 0, 100% 0%, 100% 54%, 88% 100%, 13% 100%, 0% 50%); */
+    </style>
   </head>
-  <body class="bg-mainblac vh-100 d-flex justify-content-center ">
-    <div class="dashboard-page postion-relative w-100 " style="max-width: 1300px;" >
+  <body class="bg-mainblac vh-100 d-flex justify-content-center">
+    <div
+      class="dashboard-page postion-relative w-100"
+      style="max-width: 1300px"
+    >
       <div class="col-md-12 p-0">
         <img
           src="./assets/images/top-hea.png"
@@ -167,7 +220,10 @@
           class="w-100 position-relative top-headimg"
         />
 
-        <div class="position-absolute w-100  lap_top" style="bottom:58px;height: 200px;">
+        <div
+          class="position-absolute w-100 lap_top"
+          style="bottom: 58px; height: 200px"
+        >
           <div class="d-flex position-relative">
             <div class="position-relative" style="width: 38.5%" class="w-38">
               <div class="divleft-95" style="">
@@ -176,9 +232,7 @@
                     <div class="w-46">
                       <h4 class="text-blue fs-15 pl-2">Call Report Monthly</h4>
                       <div class="w-100 d-flex justify-content-between mb-1">
-                        <div class="px-1 text-white fs-12" >
-                          Connected
-                        </div>
+                        <div class="px-1 text-white fs-12">Connected</div>
 
                         <div
                           class="d-flex justify-content-end px-1 pr-3"
@@ -195,9 +249,7 @@
                         </div>
                       </div>
                       <div class="w-100 d-flex justify-content-between mb-1">
-                        <div class="px-1 text-white fs-12" >
-                          Non-connected
-                        </div>
+                        <div class="px-1 text-white fs-12">Non-connected</div>
 
                         <div
                           class="d-flex justify-content-end px-1 pr-3"
@@ -215,9 +267,7 @@
                       </div>
 
                       <div class="w-100 d-flex justify-content-between mb-1">
-                        <div class="px-1 text-white fs-12" >
-                          Hot
-                        </div>
+                        <div class="px-1 text-white fs-12">Hot</div>
 
                         <div
                           class="d-flex justify-content-end px-1 pr-3"
@@ -234,9 +284,7 @@
                         </div>
                       </div>
                       <div class="w-100 d-flex justify-content-between mb-1">
-                        <div class="px-1 text-white fs-12" >
-                          Warm
-                        </div>
+                        <div class="px-1 text-white fs-12">Warm</div>
 
                         <div
                           class="d-flex justify-content-end px-1 pr-3"
@@ -253,9 +301,7 @@
                         </div>
                       </div>
                       <div class="w-100 d-flex justify-content-between mb-1">
-                        <div class="px-1 text-white fs-12" >
-                          Cold
-                        </div>
+                        <div class="px-1 text-white fs-12">Cold</div>
 
                         <div
                           class="d-flex justify-content-end px-1 pr-3"
@@ -272,9 +318,7 @@
                         </div>
                       </div>
                       <div class="w-100 d-flex justify-content-between mb-1">
-                        <div class="px-1 text-white fs-15" >
-                          Not Intersted
-                        </div>
+                        <div class="px-1 text-white fs-15">Not Intersted</div>
 
                         <div
                           class="d-flex justify-content-end px-1 pr-3 fs-15"
@@ -361,7 +405,7 @@
                           <div
                             class="deep_teal_fullborder text-center py-2 px-0 d-flex flex-column justify-content-end"
                           >
-                            <p class="fs-12 mb-2">Login </p>
+                            <p class="fs-12 mb-2">Login</p>
                             <h3 class="text-neonblue fs-24 fs-700">03:00</h3>
                           </div>
                           <div
@@ -381,28 +425,36 @@
                 </div>
               </div>
             </div>
-            <div class="position-relative" style="width: 23%;height: 100%;top:46px;" class="w-23">
+            <div
+              class="position-relative"
+              style="width: 23%; height: 100%; top: 46px"
+              class="w-23"
+            >
               <div class="divcen-97 position-absolute">
-                <div class=" flex-fill">
-                  <div
-                    class="deep_teal_fullborder text-center px-2   p-1"
-                  >
-                  <div class="bg-darkblue w-100 d-flex justify-content-around align-items-center" style="height: 88px;">
-                    <div>
-                      <p class="fs-12 mb-2">Today's Amount</p>
-                      <h3 class="text-neonblue fs-24 fw-700">24,000</h3>
+                <div class="flex-fill">
+                  <div class="deep_teal_fullborder text-center px-2 p-1">
+                    <div
+                      class="bg-darkblue w-100 d-flex justify-content-around align-items-center"
+                      style="height: 88px"
+                    >
+                      <div>
+                        <p class="fs-12 mb-2">Today's Amount</p>
+                        <h3 class="text-neonblue fs-24 fw-700">24,000</h3>
+                      </div>
+                      <div>
+                        <p class="fs-12 mb-2">MTD Amount</p>
+                        <h3 class="text-neonblue fs-24 fw-700">96,000</h3>
+                      </div>
                     </div>
-                    <div>
-                      <p class="fs-12 mb-2">MTD Amount</p>
-                      <h3 class="text-neonblue fs-24 fw-700">96,000</h3>
-                    </div>
-                  </div>
-                    
                   </div>
                   <div class="clip-path_box-2_bottom_sr_out mt-1 text-center">
-                    <div class="clip-path_box-2_bottom_sr_in bg-colorblack p-1">
+                    <div
+                      class="clip-path_box-2_bottom_sr_in bg-colorblack p-1"
+                      style="height: 83px"
+                    >
                       <div
                         class="text-center p-0 d-flex justify-content-around p-2"
+                        style="top: 9px; position: relative"
                       >
                         <div>
                           <p class="fs-12 mb-0">Today's Score</p>
@@ -440,7 +492,6 @@
                             style="width: 10% !important"
                           />
                         </div>
-
                         <ul
                           class="list-unstyled fs-10 border-bottom-1 listbg-white w-90 mt-2"
                           style="height: 120px; overflow-y: scroll"
@@ -561,7 +612,7 @@
         </div>
       </div>
 
-      <div class="float-left" style="position: relative;top:-38px">
+      <div class="float-left" style="position: relative; top: -38px">
         <div class="w-25 float-left">
           <div class="row flex-column px-2" style="gap: 20px">
             <div class="col-md-12">
@@ -595,7 +646,7 @@
                       </p>
                     </div>
                     <div>
-                      <h4 class="fw-bold fs-19" >24M</h4>
+                      <h4 class="fw-bold fs-19">24M</h4>
                     </div>
                   </div>
 
@@ -617,7 +668,7 @@
                       </p>
                     </div>
                     <div>
-                      <h4 class="fw-bold fs-19" >1.4M</h4>
+                      <h4 class="fw-bold fs-19">1.4M</h4>
                     </div>
                   </div>
 
@@ -639,7 +690,7 @@
                       </p>
                     </div>
                     <div>
-                      <h4 class="fw-bold fs-19" >3.3M</h4>
+                      <h4 class="fw-bold fs-19">3.3M</h4>
                     </div>
                   </div>
                 </div>
@@ -669,15 +720,23 @@
                 ></div>
               </div>
 
-              <img src="./assets/images/hon.png" class="position-absolute top-0" srcset="" width="80px" style="top: 0;
-              right: 0;
-              width: 50px !important;">
+              <img
+                src="./assets/images/hon.png"
+                class="position-absolute top-0"
+                srcset=""
+                width="80px"
+                style="top: 0; right: 0; width: 50px !important"
+              />
             </div>
 
             <div class="col-md-12 p-0 position-relative">
-              <img src="./assets/images/hon.png" class="position-absolute top-0" srcset="" width="80px" style="top: -150px;
-              left: 0;
-              width: 50px !important;">
+              <img
+                src="./assets/images/hon.png"
+                class="position-absolute top-0"
+                srcset=""
+                width="80px"
+                style="top: -150px; left: 0; width: 50px !important"
+              />
               <div class="position-relative">
                 <img
                   src="./assets/images/dash-item (2).png"
@@ -696,7 +755,7 @@
                     height: 64%;
                     width: 77%;
                     margin: auto;
-                    top:21.9%;
+                    top: 21.9%;
                     left: 12%;
                     overflow-y: scroll;
                   "
@@ -708,7 +767,7 @@
                   >
                     <div>
                       <h4 class="text-blue fs-15 mb-0">Total sign-up</h4>
-                      <p class="text-blue  mb-0">
+                      <p class="text-blue mb-0">
                         <span class="text-white fs-12"
                           ><i
                             class="fa-solid fa-caret-up position-relative text-orange"
@@ -752,7 +811,7 @@
                   >
                     <div>
                       <h4 class="text-blue fs-15 mb-0">Total Retain</h4>
-                      <p class="text-blue  mb-0">
+                      <p class="text-blue mb-0">
                         <span class="text-white fs-12"
                           ><i
                             class="fa-solid fa-caret-up position-relative text-orange"
@@ -773,9 +832,10 @@
           </div>
         </div>
 
-        <div class="w-50 float-left" style="position: relative;
-        top: -32px;
-        left: 0;">
+        <div
+          class="w-50 float-left"
+          style="position: relative; top: -32px; left: 0"
+        >
           <div class="w-100 d-flex justify-content-center">
             <img
               src="./assets/images/timer.png"
@@ -823,7 +883,7 @@
           </div>
         </div>
 
-        <div class="col-12 position-relative" style="bottom:50px;">
+        <div class="col-12 position-relative" style="bottom: 50px">
           <img src="./assets/images/bottom-foot.png" alt srcset class="w-100" />
         </div>
       </div>
